@@ -54,3 +54,12 @@ _PalletTownPlayersHouseSignText::
 _PalletTownRivalsHouseSignText::
 	text "<RIVAL>'s house "
 	done
+
+_PalletTownGuardText::
+	text "Can't be too"
+	line "safe these days!"
+
+	para "Although this"
+	line "small town is"
+	cont "pretty safe."
+	done
