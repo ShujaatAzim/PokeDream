@@ -56,10 +56,14 @@ _PalletTownRivalsHouseSignText::
 	done
 
 _PalletTownGuardText::
-	text "Can't be too"
-	line "safe these days!"
+	text "Be careful if"
+	line "you are traveling"
+	cont "to Viridian City."
+	para "You can't be too"
+	line "cautious nowadays!"
 
-	para "Although this"
-	line "small town is"
-	cont "pretty safe."
+	para "This small town"
+	line "is pretty safe,"
+	para "but the roads"
+	line "can be rough!"
 	done
