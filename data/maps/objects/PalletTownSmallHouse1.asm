@@ -10,5 +10,6 @@ PalletTownSmallHouse1_Object:
   def_object_events
 	object_event  2,  3, SPRITE_GRAMPS, STAY, RIGHT, TEXT_PALLETTOWN_OLD_MAN
 	object_event  5,  3, SPRITE_GRANNY, STAY, LEFT, TEXT_PALLETTOWN_OLD_WOMAN
+  object_event  7,  5, SPRITE_FAIRY, WALK, ANY_DIR, TEXT_PALLETTOWN_PIKACHU
 
   def_warps_to PALLETTOWN_SMALL_HOUSE_1

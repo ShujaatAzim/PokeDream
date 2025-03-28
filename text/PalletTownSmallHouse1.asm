@@ -23,3 +23,7 @@ _PalletTownOldWomanText::
   para "long, great adven-"
   line "ture ahead of you!"
   done
+
+_PalletTownPikachuText::
+  text "Pika!"
+  done
