@@ -2,11 +2,13 @@ PalletTownSmallHouse1_Object:
   db $a ; border block
 
   def_warp_events
-  warp_event  2,  7, LAST_MAP, 4
+	warp_event  2,  7, LAST_MAP, 4
 	warp_event  3,  7, LAST_MAP, 4
 
   def_bg_events
 
   def_object_events
+	object_event  2,  3, SPRITE_GRAMPS, STAY, RIGHT, TEXT_PALLETTOWN_OLD_MAN
+	object_event  5,  3, SPRITE_GRANNY, STAY, LEFT, TEXT_PALLETTOWN_OLD_WOMAN
 
   def_warps_to PALLETTOWN_SMALL_HOUSE_1
