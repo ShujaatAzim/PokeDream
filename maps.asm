@@ -1219,3 +1219,8 @@ INCLUDE "data/maps/headers/AgathasRoom.asm"
 INCLUDE "scripts/AgathasRoom.asm"
 INCLUDE "data/maps/objects/AgathasRoom.asm"
 AgathasRoom_Blocks: INCBIN "maps/AgathasRoom.blk"
+
+INCLUDE "data/maps/headers/PalletTownSmallHouse1.asm"
+INCLUDE "scripts/PalletTownSmallHouse1.asm"
+INCLUDE "data/maps/objects/PalletTownSmallHouse1.asm"
+PalletTownSmallHouse1_Blocks: INCBIN "maps/PalletTownSmallHouse1.blk"

@@ -248,6 +248,7 @@ WildDataPointers:
 	dw NothingWildMons
 	dw NothingWildMons
 	dw NothingWildMons
+	dw NothingWildMons ; pallet town small house 1
 	assert_table_length NUM_MAPS
 	dw -1 ; end
 
