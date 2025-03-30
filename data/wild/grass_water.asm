@@ -248,7 +248,9 @@ WildDataPointers:
 	dw NothingWildMons
 	dw NothingWildMons
 	dw NothingWildMons
-	dw NothingWildMons ; pallet town small house 1
+	dw NothingWildMons ; Pallet Town Small House 1
+	dw NothingWildMons ; Oak's Research Ranch
+	dw NothingWildMons ; Pallet Ranch Gate
 	assert_table_length NUM_MAPS
 	dw -1 ; end
 

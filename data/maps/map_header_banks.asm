@@ -250,4 +250,6 @@ MapHeaderBanks::
 	db BANK(BrunosRoom_h)
 	db BANK(AgathasRoom_h)
 	db BANK(PalletTownSmallHouse1_h)
+	db BANK(OaksResearchRanch_h)
+	db BANK(PalletRanchGate_h)
 	assert_table_length NUM_MAPS

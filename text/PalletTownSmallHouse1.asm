@@ -25,5 +25,5 @@ _PalletTownOldWomanText::
   done
 
 _PalletTownPikachuText::
-  text "Pika!"
+  text "PIKACHU: Pika!"
   done

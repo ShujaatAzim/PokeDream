@@ -250,4 +250,6 @@ MapHeaderPointers::
 	dw BrunosRoom_h
 	dw AgathasRoom_h
 	dw PalletTownSmallHouse1_h
+	dw OaksResearchRanch_h
+	dw PalletRanchGate_h
 	assert_table_length NUM_MAPS

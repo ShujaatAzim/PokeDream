@@ -1224,3 +1224,13 @@ INCLUDE "data/maps/headers/PalletTownSmallHouse1.asm"
 INCLUDE "scripts/PalletTownSmallHouse1.asm"
 INCLUDE "data/maps/objects/PalletTownSmallHouse1.asm"
 PalletTownSmallHouse1_Blocks: INCBIN "maps/PalletTownSmallHouse1.blk"
+
+INCLUDE "data/maps/headers/OaksResearchRanch.asm"
+INCLUDE "scripts/OaksResearchRanch.asm"
+INCLUDE "data/maps/objects/OaksResearchRanch.asm"
+OaksResearchRanch_Blocks: INCBIN "maps/OaksResearchRanch.blk"
+
+INCLUDE "data/maps/headers/PalletRanchGate.asm"
+INCLUDE "scripts/PalletRanchGate.asm"
+INCLUDE "data/maps/objects/PalletRanchGate.asm"
+PalletRanchGate_Blocks: INCBIN "maps/PalletRanchGate.blk"

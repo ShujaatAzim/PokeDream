@@ -251,7 +251,9 @@ MapHSPointers:
 	dw NoHS
 	dw NoHS
 	dw NoHS
-	dw NoHS ; pallet small house 1
+	dw NoHS ; Pallet Town Small House 1
+	dw NoHS ; Oak's Research Ranch
+	dw NoHS ; Pallet Ranch Gate
 	assert_table_length NUM_MAPS
 	dw -1 ; end
 
