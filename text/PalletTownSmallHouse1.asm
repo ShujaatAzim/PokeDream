@@ -18,7 +18,7 @@ _PalletTownOldWomanText::
   cont "long-past trainer"
   cont "days."
 
-  para "Don't let him bore"
+  para "Don't let him keep"
   line "you! You have a"
   para "long, great adven-"
   line "ture ahead of you!"

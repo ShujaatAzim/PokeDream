@@ -8,5 +8,6 @@ OaksResearchRanch_Object:
   def_bg_events
 
   def_object_events
+  object_event 20, 18, SPRITE_SCIENTIST, STAY, UP, TEXT_RANCH_SCIENTIST_1
 
   def_warps_to OAKS_RESEARCH_RANCH
