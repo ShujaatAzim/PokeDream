@@ -13,3 +13,23 @@ _RanchScientist1::
   para "before entering"
   line "a cave."
 	done
+
+_RanchMountainSignText::
+  text "MOUNTAIN RESEARCH"
+  line "HABITAT"
+  done
+
+_RanchCaveSignText::
+  text "CAVE RESEARCH"
+  line "HABITAT"
+  done
+
+_RanchPlainsSignText::
+  text "PLAINS RESEARCH"
+  line "HABITAT"
+  done
+
+_RanchAquaticSignText::
+  text "AQUATIC RESEARCH"
+  line "HABITAT"
+  done
