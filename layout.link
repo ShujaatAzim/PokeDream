@@ -178,14 +178,21 @@ ROMX $2E
 ROMX $2F
 	"Pics 3"
 ROMX $30
-	"Pics 4"
+	org $4000
+	"Party Mon Sprites Gfx 1"
 ROMX $31
-	"Pics 5"
+	org $4000
+	"Party Mon Sprites Gfx 2"
+	"Party Mon Sprites Routines"
 ROMX $32
-	"Pics 6"
+	"Pics 4"
 ROMX $33
-	"Pics 7"
+	"Pics 5"
 ROMX $34
+	"Pics 6"
+ROMX $35
+	"Pics 7"
+ROMX $36
 	"Pics 8"
 WRAM0
 	"Audio RAM"
