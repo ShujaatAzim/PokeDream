@@ -9,7 +9,7 @@ OaksResearchRanch_Object:
 	bg_event  7, 15, TEXT_RANCH_MOUNTAIN_SIGN
 	bg_event 17, 17, TEXT_RANCH_CAVE_SIGN
 	bg_event 19,  5, TEXT_RANCH_PLAINS_SIGN
-	bg_event 13,  5, TEXT_RANCH_AQUATIC_SIGN
+	bg_event 15,  5, TEXT_RANCH_AQUATIC_SIGN
 
   def_object_events
 	object_event 22, 18, SPRITE_SCIENTIST, STAY, UP, TEXT_RANCH_SCIENTIST_1
