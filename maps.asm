@@ -1234,3 +1234,8 @@ INCLUDE "data/maps/headers/PalletRanchGate.asm"
 INCLUDE "scripts/PalletRanchGate.asm"
 INCLUDE "data/maps/objects/PalletRanchGate.asm"
 PalletRanchGate_Blocks: INCBIN "maps/PalletRanchGate.blk"
+
+INCLUDE "data/maps/headers/PalletTownSmallHouse2.asm"
+INCLUDE "scripts/PalletTownSmallHouse2.asm"
+INCLUDE "data/maps/objects/PalletTownSmallHouse2.asm"
+PalletTownSmallHouse2_Blocks: INCBIN "maps/PalletTownSmallHouse2.blk"

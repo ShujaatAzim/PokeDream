@@ -251,6 +251,7 @@ WildDataPointers:
 	dw NothingWildMons ; Pallet Town Small House 1
 	dw NothingWildMons ; Oak's Research Ranch
 	dw NothingWildMons ; Pallet Ranch Gate
+	dw NothingWildMons ; Pallet Town Small House 2
 	assert_table_length NUM_MAPS
 	dw -1 ; end
 

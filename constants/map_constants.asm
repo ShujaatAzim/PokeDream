@@ -269,7 +269,8 @@ DEF FIRST_INDOOR_MAP EQU const_value
 	map_const AGATHAS_ROOM,                   5,  6 ; $F7
 	map_const PALLETTOWN_SMALL_HOUSE_1,				4,  4 ; $F8
 	map_const OAKS_RESEARCH_RANCH,					 15, 13 ; $F9
-	map_const PALLET_RANCH_GATE,							5,	4 ; $FF
+	map_const PALLET_RANCH_GATE,							5,	4 ; $FA
+	map_const PALLETTOWN_SMALL_HOUSE_2,				6,  4 ; $FB
 DEF NUM_MAPS EQU const_value
 
 ; Indoor maps, such as houses, use this as the Map ID in their exit warps

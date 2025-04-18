@@ -1,0 +1,2 @@
+map_header PalletTownSmallHouse2, PALLETTOWN_SMALL_HOUSE_2, HOUSE, 0
+end_map_header
