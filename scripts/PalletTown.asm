@@ -159,6 +159,8 @@ PalletTown_TextPointers:
 	dw_const PalletTownSignText,             TEXT_PALLETTOWN_SIGN
 	dw_const PalletTownPlayersHouseSignText, TEXT_PALLETTOWN_PLAYERSHOUSE_SIGN
 	dw_const PalletTownRivalsHouseSignText,  TEXT_PALLETTOWN_RIVALSHOUSE_SIGN
+	dw_const PalletTownOaksRanchSignText,    TEXT_PALLETTOWN_OAKSRANCH_SIGN
+	dw_const PalletTownSchoolhouseSignText,  TEXT_PALLETTOWN_SCHOOLHOUSE_SIGN
 
 PalletTownOakText:
 	text_asm
@@ -218,4 +220,12 @@ PalletTownRivalsHouseSignText:
 
 PalletTownGuardText:
 	text_far _PalletTownGuardText
+	text_end
+
+PalletTownOaksRanchSignText:
+	text_far _PalletTownOaksRanchSignText
+	text_end
+
+PalletTownSchoolhouseSignText:
+	text_far _PalletTownSchoolhouseSignText
 	text_end

@@ -59,11 +59,19 @@ _PalletTownGuardText::
 	text "Be careful if"
 	line "you are traveling"
 	cont "to Viridian City."
-	para "You can't be too"
-	line "cautious nowadays!"
 
 	para "This small town"
 	line "is pretty safe,"
 	para "but the roads"
 	line "can be rough!"
+	done
+
+_PalletTownOaksRanchSignText::
+	text "OAK #MON"
+	line "RESEARCH RANCH"
+	done
+
+_PalletTownSchoolhouseSignText::
+	text "Pallet Town"
+	line "Schoolhouse"
 	done
