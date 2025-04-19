@@ -1,4 +1,4 @@
-PalletTownSmallHouse2_Object:
+PalletTownSchool_Object:
 	db $a ; border block
 
 	def_warp_events
@@ -9,4 +9,4 @@ PalletTownSmallHouse2_Object:
 
 	def_object_events
 
-	def_warps_to PALLETTOWN_SMALL_HOUSE_2
+	def_warps_to PALLETTOWN_SCHOOL
