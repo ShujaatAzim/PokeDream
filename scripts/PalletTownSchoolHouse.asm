@@ -1,7 +1,7 @@
-PalletTownSchool_Script:
+PalletTownSchoolHouse_Script:
 	jp EnableAutoTextBoxDrawing
 
-PalletTownSchool_TextPointers:
+PalletTownSchoolHouse_TextPointers:
 	def_text_pointers
 	dw_const PalletSchoolBoyText,					 TEXT_PALLETSCHOOL_BOY
   dw_const PalletSchoolGirlText,         TEXT_PALLETSCHOOL_GIRL

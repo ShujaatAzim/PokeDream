@@ -13,7 +13,7 @@ PalletTown_Object:
 	warp_event 16, 11, OAKS_LAB, 2
 	warp_event 23,  5, PALLETTOWN_SMALL_HOUSE_1, 1
 	warp_event 29,  3, PALLET_RANCH_GATE, 3
-	warp_event 27,  9, PALLETTOWN_SCHOOL, 1
+	warp_event 27,  9, PALLETTOWN_SCHOOL_HOUSE, 1
 
 	def_bg_events
 	bg_event 17, 13, TEXT_PALLETTOWN_OAKSLAB_SIGN

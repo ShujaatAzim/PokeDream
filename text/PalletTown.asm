@@ -71,7 +71,7 @@ _PalletTownOaksRanchSignText::
 	line "RESEARCH RANCH"
 	done
 
-_PalletTownSchoolhouseSignText::
+_PalletTownSchoolHouseSignText::
 	text "Pallet Town"
 	line "Schoolhouse"
 	done
