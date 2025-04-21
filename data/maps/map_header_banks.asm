@@ -249,7 +249,7 @@ MapHeaderBanks::
 	db BANK(LoreleisRoom_h)
 	db BANK(BrunosRoom_h)
 	db BANK(AgathasRoom_h)
-	db BANK(PalletTownSmallHouse1_h)
+	db BANK(PalletTownHouse1_h)
 	db BANK(OaksResearchRanch_h)
 	db BANK(PalletRanchGate_h)
 	db BANK(PalletTownSchoolHouse_h)

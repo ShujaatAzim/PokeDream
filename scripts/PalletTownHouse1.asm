@@ -1,7 +1,7 @@
-PalletTownSmallHouse1_Script:
+PalletTownHouse1_Script:
   jp EnableAutoTextBoxDrawing
 
-PalletTownSmallHouse1_TextPointers:
+PalletTownHouse1_TextPointers:
   def_text_pointers
   dw_const PalletTownOldManText,					 TEXT_PALLETTOWN_OLD_MAN
   dw_const PalletTownOldWomanText,         TEXT_PALLETTOWN_OLD_WOMAN

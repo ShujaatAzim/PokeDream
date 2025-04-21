@@ -1,4 +1,4 @@
-PalletTownSmallHouse1_Object:
+PalletTownHouse1_Object:
   db $a ; border block
 
   def_warp_events
@@ -12,4 +12,4 @@ PalletTownSmallHouse1_Object:
 	object_event  5,  3, SPRITE_GRANNY, STAY, LEFT, TEXT_PALLETTOWN_OLD_WOMAN
   object_event  7,  5, SPRITE_FAIRY, WALK, ANY_DIR, TEXT_PALLETTOWN_PIKACHU
 
-  def_warps_to PALLETTOWN_SMALL_HOUSE_1
+  def_warps_to PALLETTOWN_HOUSE_1

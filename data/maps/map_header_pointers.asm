@@ -249,7 +249,7 @@ MapHeaderPointers::
 	dw LoreleisRoom_h
 	dw BrunosRoom_h
 	dw AgathasRoom_h
-	dw PalletTownSmallHouse1_h
+	dw PalletTownHouse1_h
 	dw OaksResearchRanch_h
 	dw PalletRanchGate_h
 	dw PalletTownSchoolHouse_h
