@@ -1,7 +1,3 @@
-	object_const_def
-	; const_export PALLETRANCHGATE_SUPER_NERD
-	; const_export PALLETRANCHGATE_GRAMPS
-
 PalletRanchGate_Object:
 	db $a ; border block
 
@@ -14,7 +10,8 @@ PalletRanchGate_Object:
 	def_bg_events
 
 	def_object_events
-	; object_event  3,  2, SPRITE_SUPER_NERD, STAY, NONE, TEXT_PALLETRANCHGATE_SUPER_NERD
-	; object_event  2,  5, SPRITE_GRAMPS, STAY, NONE, TEXT_PALLETRANCHGATE_GRAMPS
+	object_event  3,  2, SPRITE_SUPER_NERD, WALK, ANY_DIR, TEXT_PALLETRANCHGATE_SUPER_NERD
+	object_event  0,  5, SPRITE_GRAMPS, STAY, RIGHT, TEXT_PALLETRANCHGATE_GRAMPS
+	object_event  7,  4, SPRITE_BEAUTY, STAY, LEFT, TEXT_PALLETRANCHGATE_RECEPTIONIST
 
 	def_warps_to PALLET_RANCH_GATE
