@@ -17,11 +17,11 @@ DefaultNamesPlayerList:
 	db "NEW NAME@"
 	db "BLUE@"
 	db "GARY@"
-	db "JOHN@"
+	db "SHU@"
 
 DefaultNamesRivalList:
 	db "NEW NAME@"
 	db "RED@"
 	db "ASH@"
-	db "JACK@"
+	db "GARY@"
 ENDC
