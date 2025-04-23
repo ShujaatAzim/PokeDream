@@ -17,3 +17,7 @@ _PalletRanchGateReceptionistText::
   line "the professor's"
   para "receptionist!"
   done
+
+_TestIconText::
+  text "Success!"
+  done
