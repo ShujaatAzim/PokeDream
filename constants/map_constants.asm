@@ -16,7 +16,7 @@ ENDM
 ; Each map also has associated data in maps.asm.
 ; Order: towns/cities, then routes, then indoor/dungeon maps
 	const_def
-	map_const PALLET_TOWN,                   19, 11 ; $00
+	map_const PALLET_TOWN,                   19, 12 ; $00
 	map_const VIRIDIAN_CITY,                 20, 18 ; $01
 	map_const PEWTER_CITY,                   20, 18 ; $02
 	map_const CERULEAN_CITY,                 20, 18 ; $03
@@ -268,7 +268,7 @@ DEF FIRST_INDOOR_MAP EQU const_value
 	map_const BRUNOS_ROOM,                    5,  6 ; $F6
 	map_const AGATHAS_ROOM,                   5,  6 ; $F7
 	map_const PALLETTOWN_HOUSE_1,							4,  4 ; $F8
-	map_const OAKS_RESEARCH_RANCH,					 15, 13 ; $F9
+	map_const OAKS_RESEARCH_RANCH,					 15, 14 ; $F9
 	map_const PALLET_RANCH_GATE,							5,	4 ; $FA
 	map_const PALLETTOWN_SCHOOL_HOUSE,				7,  4 ; $FB
 DEF NUM_MAPS EQU const_value
