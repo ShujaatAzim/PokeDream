@@ -62,8 +62,8 @@ _PalletTownGuardText::
 
 	para "This small town"
 	line "is pretty safe,"
-	para "but the roads"
-	line "can be rough!"
+	cont "but the roads"
+	cont "can be rough!"
 	done
 
 _PalletTownOaksRanchSignText::
@@ -74,4 +74,11 @@ _PalletTownOaksRanchSignText::
 _PalletTownSchoolHouseSignText::
 	text "Pallet Town"
 	line "Schoolhouse"
+	done
+
+_PalletTownTrainerText::
+	text "Ahh, this park"
+	line "is a great place"
+	cont "to take a break"
+	cont "from training!"
 	done

@@ -3,15 +3,11 @@ _RanchScientist1::
 	line "#MON that hide"
 	cont "in caves."
 
-  para "But it can be"
-  line "dangerous!"
-
   para "Be sure heal your"
   line "#MON and carry"
   cont "an ESCAPE ROPE"
-  
-  para "before entering"
-  line "a cave."
+  cont "before entering"
+  cont "a cave."
 	done
 
 _RanchMountainSignText::
