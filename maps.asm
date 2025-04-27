@@ -1239,3 +1239,8 @@ INCLUDE "data/maps/headers/PalletTownSchoolHouse.asm"
 INCLUDE "scripts/PalletTownSchoolHouse.asm"
 INCLUDE "data/maps/objects/PalletTownSchoolHouse.asm"
 PalletTownSchoolHouse_Blocks: INCBIN "maps/PalletTownSchoolHouse.blk"
+
+INCLUDE "data/maps/headers/PalletMart.asm"
+INCLUDE "scripts/PalletMart.asm"
+INCLUDE "data/maps/objects/PalletMart.asm"
+PalletMart_Blocks: INCBIN "maps/PalletMart.blk"

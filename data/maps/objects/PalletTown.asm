@@ -15,8 +15,8 @@ PalletTown_Object:
 	warp_event 16, 19, PALLET_RANCH_GATE, 3
 	warp_event 17, 19, PALLET_RANCH_GATE, 4
 	warp_event 27, 11, PALLETTOWN_SCHOOL_HOUSE, 1
+	warp_event 29, 17, PALLET_MART, 1
 	; warp_event 23, 15, PALLETTOWN_HOUSE_2, 1
-	; warp_event 25, 15, PALLETTOWN_MART, 1
 
 	def_bg_events
 	bg_event 17, 15, TEXT_PALLETTOWN_OAKSLAB_SIGN

@@ -253,4 +253,5 @@ MapHeaderPointers::
 	dw OaksResearchRanch_h
 	dw PalletRanchGate_h
 	dw PalletTownSchoolHouse_h
+	dw PalletMart_h
 	assert_table_length NUM_MAPS

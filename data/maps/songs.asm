@@ -252,4 +252,5 @@ MapSongBanks::
 	db MUSIC_PALLET_TOWN, BANK(Music_PalletTown) ; OAKS_RESEARCH_RANCH
 	db MUSIC_PALLET_TOWN, BANK(Music_PalletTown) ; PALLET_RANCH_GATE
 	db MUSIC_PALLET_TOWN, BANK(Music_PalletTown) ; PALLETTOWN_SCHOOL_HOUSE
+	db MUSIC_POKECENTER,  BANK(Music_Pokecenter) ; PALLET_MART
 	assert_table_length NUM_MAPS
