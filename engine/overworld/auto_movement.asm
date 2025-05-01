@@ -53,14 +53,14 @@ PalletMovementScriptPointerTable::
 
 PalletMovementScript_OakMoveLeft:
 	ld a, [wXCoord]
-	sub $a
+	cp 14
 	ld [wNumStepsToTake], a
 	jr z, .playerOnLeftTile
 ; The player is on the right tile of the northern path out of Pallet Town and
 ; Prof. Oak is below.
 ; Make Prof. Oak step to the left.
 	ld b, 0
-	ld c, a
+	ld c, 1
 	ld hl, wNPCMovementDirections2
 	ld a, NPC_MOVEMENT_LEFT
 	call FillMemory
@@ -89,7 +89,8 @@ PalletMovementScript_PlayerMoveLeft:
 	ld a, [wStatusFlags5]
 	bit BIT_SCRIPTED_NPC_MOVEMENT, a
 	ret nz ; return if Oak is still moving
-	ld a, [wNumStepsToTake]
+	ld a, 1
+	ld [wNumStepsToTake], a
 	ld [wSimulatedJoypadStatesIndex], a
 	ldh [hNPCMovementDirections2Index], a
 	predef ConvertNPCMovementDirectionsToJoypadMasks

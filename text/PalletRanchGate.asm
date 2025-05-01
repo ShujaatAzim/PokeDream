@@ -3,8 +3,8 @@ _PalletRanchGateSuperNerdText::
   line "Prof. Oak fan!"
   para "I hope to work"
   line "for him one day"
-  para "so I can learn"
-  line "everything about"
+  cont "so I can learn"
+  cont "everything about"
   cont "#MON!"
   done
 
