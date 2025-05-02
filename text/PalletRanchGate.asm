@@ -2,22 +2,28 @@ _PalletRanchGateSuperNerdText::
   text "I am a huge"
   line "Prof. Oak fan!"
   para "I hope to work"
-  line "for him one day"
-  cont "so I can learn"
-  cont "everything about"
-  cont "#MON!"
+  line "for him one day!"
   done
 
 _PalletRanchGateGrampsText::
-  text "Hi youngin!"
+  text "Prof. Oak and I"
+  line "have been rivals"
+  cont "since we began"
+  cont "training #MON"
+  cont "at your age."
+
+  para "Hah!"
+
+  para "Perhaps you will"
+  line "make lifelong"
+  cont "friends on your"
+  cont "journey too!"
   done
 
 _PalletRanchGateReceptionistText::
-  text "Welcome! I am"
-  line "the professor's"
-  para "receptionist!"
-  done
-
-_TestIconText::
-  text "Success!"
+  text "This ranch is"
+  line "where Prof. Oak"
+  cont "studies #MON"
+  cont "in their natural"
+  cont "habitats."
   done

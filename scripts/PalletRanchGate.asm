@@ -7,7 +7,6 @@ PalletRanchGate_TextPointers:
   dw_const PalletRanchGateSuperNerdText,			 TEXT_PALLETRANCHGATE_SUPER_NERD
 	dw_const PalletRanchGateGrampsText,					 TEXT_PALLETRANCHGATE_GRAMPS
 	dw_const PalletRanchGateReceptionistText,    TEXT_PALLETRANCHGATE_RECEPTIONIST
-	dw_const TestIconText,					 						 TEXT_TESTICON
 
 PalletRanchGateSuperNerdText:
 	text_far _PalletRanchGateSuperNerdText
@@ -19,8 +18,4 @@ PalletRanchGateGrampsText:
 
 PalletRanchGateReceptionistText:
 	text_far _PalletRanchGateReceptionistText
-	text_end
-
-TestIconText:
-	text_far _TestIconText
 	text_end
