@@ -38,12 +38,12 @@ _TM34ExplanationText::
 	cont "carefully!"
 
 	para "TM34 contains"
-	line "BIDE!"
+	line "ROCK THROW!"
 
 	para "Your #MON will"
-	line "absorb damage in"
-	cont "battle then pay"
-	cont "it back double!"
+	line "throw rocks at"
+	cont "the opponent to"
+	cont "deal damage!"
 	done
 
 _PewterGymTM34NoRoomText::
