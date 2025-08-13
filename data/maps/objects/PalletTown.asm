@@ -5,7 +5,7 @@
 	const_export PALLETTOWN_GUARD
 
 PalletTown_Object:
-	db $b ; border block
+	db $f ; border block
 
 	def_warp_events
 	warp_event  9,  7, REDS_HOUSE_1F, 1
