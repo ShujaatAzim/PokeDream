@@ -135,6 +135,8 @@ LassData:
 	db 23, ODDISH, GLOOM, 0
 ; Route 1
 	db 5, NIDORAN_F, NIDORAN_M, 0
+; Route 1 Cave
+	db 6, PARAS, NIDORAN_F, CLEFAIRY, 0
 
 SailorData:
 ; SS Anne Stern
@@ -166,6 +168,8 @@ JrTrainerMData:
 	db 19, RATTATA, DIGLETT, EKANS, SANDSHREW, 0
 ; Route 12
 	db 29, NIDORAN_M, NIDORINO, 0
+; Route 1 Cave
+	db 6, SANDSHREW, MANKEY, 0
 
 JrTrainerFData:
 ; Cerulean Gym
