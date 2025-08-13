@@ -11,10 +11,11 @@
 	const_export ROUTE1_LASS_TRAINER
 	
 Route1_Object:
-	db $b ; border block
+	db $f ; border block
 
 	def_warp_events
-	warp_event 8, 7, ROUTE_1_CAVE, 1
+	warp_event 	8,  7, ROUTE_1_CAVE, 1
+	warp_event 34, 13, ROUTE_1_CAVE, 2
 
 	def_bg_events
 	bg_event 25, 27, TEXT_ROUTE1_SIGN
