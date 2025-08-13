@@ -21,10 +21,10 @@ _ViridianPokecenterOfficerJennyText::
 	
 	para "We JENNYs patrol"
 	line "each town and"
-	cont "the peace."
+	cont "keep the peace."
 
 	para "Stay out of"
-	cont "trouble!"
+	line "trouble!"
 	done
 
 _ViridianPokecenterNurseJoyText::
@@ -32,11 +32,6 @@ _ViridianPokecenterNurseJoyText::
 	line "We JOYs run just"
 	cont "about every" 
 	cont "#MON CENTER."
-
-	para "We treat your"
-	line "#MON, but we"
-	cont "welcome trainers"
-	cont "too."
 	
 	para "Feel free to rest"
 	line "here anytime!"
