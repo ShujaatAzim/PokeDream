@@ -55,7 +55,7 @@
 	const SPRITE_MOM                     ; $33
 	const SPRITE_BALDING_GUY             ; $34
 	const SPRITE_LITTLE_BOY              ; $35
-	const SPRITE_UNUSED_GAMEBOY_KID      ; $36
+	const SPRITE_NURSE_JOY							 ; $4c
 	const SPRITE_GAMEBOY_KID             ; $37
 	const SPRITE_FAIRY                   ; $38
 	const SPRITE_AGATHA                  ; $39
@@ -78,5 +78,4 @@ DEF FIRST_STILL_SPRITE EQU const_value
 	const SPRITE_UNUSED_GAMBLER_ASLEEP_2 ; $49
 	const SPRITE_GAMBLER_ASLEEP          ; $4a
 	const SPRITE_CHANSEY								 ; $4b
-	const SPRITE_NURSE_JOY							 ; $4c
 DEF NUM_SPRITES EQU const_value - 1
