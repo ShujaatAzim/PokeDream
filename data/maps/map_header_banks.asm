@@ -249,10 +249,9 @@ MapHeaderBanks::
 	db BANK(LoreleisRoom_h)
 	db BANK(BrunosRoom_h)
 	db BANK(AgathasRoom_h)
-	db BANK(PalletTownHouse1_h)
 	db BANK(OaksResearchRanch_h)
 	db BANK(PalletRanchGate_h)
-	db BANK(PalletTownSchoolHouse_h)
+	db BANK(PalletTownHouses_h)
 	db BANK(PalletMart_h)
 	db BANK(Route1Cave_h)
 	assert_table_length NUM_MAPS

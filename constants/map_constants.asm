@@ -267,10 +267,9 @@ DEF FIRST_INDOOR_MAP EQU const_value
 	map_const LORELEIS_ROOM,                  5,  6 ; $F5
 	map_const BRUNOS_ROOM,                    5,  6 ; $F6
 	map_const AGATHAS_ROOM,                   5,  6 ; $F7
-	map_const PALLETTOWN_HOUSE_1,							4,  4 ; $F8
 	map_const OAKS_RESEARCH_RANCH,					 15, 14 ; $F9
 	map_const PALLET_RANCH_GATE,							5,	4 ; $FA
-	map_const PALLETTOWN_SCHOOL_HOUSE,				7,  4 ; $FB
+	map_const PALLET_TOWN_HOUSES,						 21,  4 ; $FB
 	map_const PALLET_MART,										4,  4 ; $FC
 	map_const ROUTE_1_CAVE,									 16,  8 ; $FD
 DEF NUM_MAPS EQU const_value
