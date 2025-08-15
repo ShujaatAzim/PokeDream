@@ -11,10 +11,10 @@ PalletTown_Object:
 	warp_event  9,  7, REDS_HOUSE_1F, 1
 	warp_event 17,  7, BLUES_HOUSE, 1
 	warp_event 16, 13, OAKS_LAB, 2
-	warp_event 23,  7, PALLETTOWN_HOUSE_1, 1
+	warp_event 23,  7, PALLET_TOWN_HOUSES, 1
+	warp_event 27, 11, PALLET_TOWN_HOUSES, 3
 	warp_event 16, 19, PALLET_RANCH_GATE, 3
 	warp_event 17, 19, PALLET_RANCH_GATE, 4
-	warp_event 27, 11, PALLETTOWN_SCHOOL_HOUSE, 1
 	warp_event 29, 17, PALLET_MART, 1
 
 	def_bg_events
