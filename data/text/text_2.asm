@@ -1550,7 +1550,8 @@ _SwitchOnText::
 	prompt
 
 _WhatText::
-	text "What?"
+	text "What"
+	line "to do?"
 	done
 
 _DepositWhichMonText::
@@ -1788,3 +1789,8 @@ _TextIDErrorText::
 _ContCharText::
 	text "<_CONT>@"
 	text_end
+
+_CantUsePCHere::
+	text "You cannot use"
+	line "this here..."
+	prompt

@@ -3,13 +3,11 @@ DrawStartMenu::
 	CheckEvent EVENT_GOT_POKEDEX
 ; menu with pokedex
 	hlcoord 10, 0
-	ld b, $0e
-	ld c, $08
+	lb bc, 16, 8 ; for port pc
 	jr nz, .drawTextBoxBorder
 ; shorter menu if the player doesn't have the pokedex
 	hlcoord 10, 0
-	ld b, $0c
-	ld c, $08
+	lb bc, 18, 8 ; for port pc
 .drawTextBoxBorder
 	call TextBoxBorder
 	ld a, D_DOWN | D_UP | START | B_BUTTON | A_BUTTON
@@ -33,7 +31,7 @@ DrawStartMenu::
 ; case for having pokedex
 	ld de, StartMenuPokedexText
 	call PrintStartMenuItem
-	ld a, $07
+	ld a, $08 ; for port pc
 .storeMenuItemCount
 	ld [wMaxMenuItem], a ; number of menu items
 	ld de, StartMenuPokemonText
@@ -53,6 +51,11 @@ DrawStartMenu::
 	call PrintStartMenuItem
 	ld de, StartMenuOptionText
 	call PrintStartMenuItem
+	CheckEvent EVENT_GOT_POKEDEX ; for port pc, until lines 54 until 58 inclusive
+	jr z, .dontPrintPortablePC
+	ld de, StartMenuPortablePCText
+	call PrintStartMenuItem
+.dontPrintPortablePC
 	ld de, StartMenuExitText
 	call PlaceString
 	ld hl, wStatusFlags5
@@ -79,6 +82,9 @@ StartMenuExitText:
 
 StartMenuOptionText:
 	db "OPTION@"
+
+StartMenuPortablePCText:
+	db "PORT.PC@"
 
 PrintStartMenuItem:
 	push hl
