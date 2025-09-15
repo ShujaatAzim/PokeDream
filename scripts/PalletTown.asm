@@ -156,6 +156,7 @@ PalletTown_TextPointers:
 	dw_const PalletTownFisherText,           TEXT_PALLETTOWN_FISHER
 	dw_const PalletTownGuardText,						 TEXT_PALLETTOWN_GUARD
 	dw_const PalletTownTrainerText,					 TEXT_PALLETTOWN_TRAINER
+	dw_const PalletTownWomanText,						 TEXT_PALLETTOWN_WOMAN
 	dw_const PalletTownOaksLabSignText,      TEXT_PALLETTOWN_OAKSLAB_SIGN
 	dw_const PalletTownSignText,             TEXT_PALLETTOWN_SIGN
 	dw_const PalletTownPlayersHouseSignText, TEXT_PALLETTOWN_PLAYERSHOUSE_SIGN
@@ -233,4 +234,8 @@ PalletTownSchoolHouseSignText:
 
 PalletTownTrainerText:
 	text_far _PalletTownTrainerText
+	text_end
+
+PalletTownWomanText:
+	text_far _PalletTownWomanText
 	text_end

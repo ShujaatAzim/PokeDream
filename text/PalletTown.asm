@@ -82,3 +82,8 @@ _PalletTownTrainerText::
 	cont "to take a break"
 	cont "from training!"
 	done
+
+_PalletTownWomanText::
+	text "This is a"
+	line "test!"
+	done
