@@ -84,6 +84,18 @@ _PalletTownTrainerText::
 	done
 
 _PalletTownWomanText::
-	text "This is a"
-	line "test!"
+	text "I can't believe"
+	line "I lost my keys"
+	cont "again!"
+
+	para "I must have"
+	line "dropped them in"
+	cont "the cave on"
+	cont "ROUTE 1 while I"
+	cont "was looking for"
+	cont "#MON..."
+
+	para "Could you be"
+	line "a dear and find"
+	cont "them for me?"
 	done
