@@ -149,7 +149,7 @@ ENDC
 	xor a ; EXCLAMATION_BUBBLE
 	ld [wWhichEmotionBubble], a
 	predef EmotionBubble
-	ld a, D_RIGHT | D_LEFT | D_UP | D_DOWN
+	ld a, $ff
 	ld [wJoyIgnore], a
 	xor a
 	ldh [hJoyHeld], a
@@ -160,9 +160,22 @@ ENDC
 
 ; display the before battle text after the enemy trainer has walked up to the player's sprite
 DisplayEnemyTrainerTextAndStartBattle::
+	farcall FaceEnemyTrainer
+
 	ld a, [wStatusFlags5]
 	and 1 << BIT_SCRIPTED_NPC_MOVEMENT
-	ret nz ; return if the enemy trainer hasn't finished walking to the player's sprite
+	jr z, .doneWalking
+
+	; stop player "walking in place"
+	xor a
+	ld [wSpritePlayerStateData1IntraAnimFrameCounter], a
+	ld [wSpritePlayerStateData1AnimFrameCounter], a
+	ld a, STAY
+	ld [wSpritePlayerStateData1MovementStatus], a
+	ret
+
+.doneWalking
+	xor a
 	ld [wJoyIgnore], a
 	ld a, [wSpriteIndex]
 	ldh [hSpriteIndex], a
