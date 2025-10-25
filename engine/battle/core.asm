@@ -4462,7 +4462,7 @@ GetEnemyMonStat:
 	ld [de], a
 	pop bc
 	ld b, $0
-	ld hl, wLoadedMonSpeedExp - $b ; this base address makes CalcStat look in [wLoadedMonSpeedExp] for DVs
+	ld hl, wLoadedMonSpeedExp - $d ; this base address makes CalcStat look in [wLoadedMonSpeedExp] for DVs
 	call CalcStat
 	pop de
 	ret
@@ -6192,10 +6192,9 @@ LoadEnemyMonData:
 	ld [de], a
 	inc de
 	ld b, $0
-	ld hl, wEnemyMonHP
-	push hl
+	ld hl, wEnemyMonHP - 2 ; CalcStats will now add 13 bytes to this value instead of 11 to find DVs, so we adjust by subtracting 2...
 	call CalcStats
-	pop hl
+	ld hl, wEnemyMonHP 		 ; ...and now we restore the expected value
 	ld a, [wIsInBattle]
 	cp $2 ; is it a trainer battle?
 	jr z, .copyHPAndStatusFromPartyData
@@ -6540,7 +6539,7 @@ CalculateModifiedStats:
 	jr nz, .loop
 	ret
 
-; calculate modified stat for stat c (0 = attack, 1 = defense, 2 = speed, 3 = special)
+; calculate modified stat for stat c (0 = attack, 1 = defense, 2 = speed, 3 = spcl.atk, 4 = spcl.def)
 CalculateModifiedStat:
 	push bc
 	push bc
