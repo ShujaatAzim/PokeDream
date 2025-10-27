@@ -6631,7 +6631,7 @@ ApplyBadgeStatBoosts:
 ; Boulder (bit 0) - attack
 ; Thunder (bit 2) - defense
 ; Soul (bit 4) - speed
-; Volcano (bit 6) - special
+; Volcano (bit 6) - special attack
 .loop
 	srl b
 	call c, .applyBoostToStat
@@ -6640,7 +6640,11 @@ ApplyBadgeStatBoosts:
 	srl b
 	dec c
 	jr nz, .loop
-	ret
+; Special case added for special defense
+	ld a, [wObtainedBadges]
+	bit BIT_VOLCANOBADGE, a ; checks same badge as special attack, but could be any of them
+	ret z										; return immediately if that badge has not been obtained yet
+; fall-through intended
 
 ; multiply stat at hl by 1.125
 ; cap stat at MAX_STAT_VALUE
