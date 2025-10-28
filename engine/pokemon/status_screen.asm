@@ -250,19 +250,16 @@ PrintStatsBox:
 	ld a, d
 	and a ; a is 0 from the status screen
 	jr nz, .DifferentBox
-	hlcoord 0, 8
-	ld b, 8
-	ld c, 8
-	call TextBoxBorder ; Draws the box
-	hlcoord 1, 9 ; Start printing stats from here
+; Don't draw a border, the status screen needs every line it can get here
+	hlcoord 1, 8 ; start printing stats from here
 	ld bc, $19 ; Number offset
 	jr .PrintStats
 .DifferentBox
-	hlcoord 9, 2
-	ld b, 8
+	hlcoord 9, 0
+	ld b, 10
 	ld c, 9
 	call TextBoxBorder
-	hlcoord 11, 3
+	hlcoord 11, 1
 	ld bc, $18
 .PrintStats
 	push bc
@@ -279,7 +276,9 @@ PrintStatsBox:
 	call PrintStat
 	ld de, wLoadedMonSpeed
 	call PrintStat
-	ld de, wLoadedMonSpecial
+	ld de, wLoadedMonSpclAtk
+	call PrintStat
+	ld de, wLoadedMonSpclDef
 	jp PrintNumber
 PrintStat:
 	push hl
@@ -293,7 +292,8 @@ StatsText:
 	db   "ATTACK"
 	next "DEFENSE"
 	next "SPEED"
-	next "SPECIAL@"
+	next "SPCL.ATK"
+	next "SPCL.DEF@"
 
 StatusScreen2:
 	ldh a, [hTileAnimations]
