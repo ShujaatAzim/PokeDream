@@ -75,7 +75,8 @@ MoveEffectPointerTable:
 	dw StatModifierDownEffect    ; ATTACK_DOWN_SIDE_EFFECT
 	dw StatModifierDownEffect    ; DEFENSE_DOWN_SIDE_EFFECT
 	dw StatModifierDownEffect    ; SPEED_DOWN_SIDE_EFFECT
-	dw StatModifierDownEffect    ; SPECIAL_DOWN_SIDE_EFFECT
+	dw StatModifierDownEffect    ; SPCLATK_DOWN_SIDE_EFFECT
+	dw StatModifierDownEffect    ; SPCLDEF_DOWN_SIDE_EFFECT
 	dw StatModifierDownEffect    ; unused effect
 	dw StatModifierDownEffect    ; unused effect
 	dw StatModifierDownEffect    ; unused effect
