@@ -56,6 +56,7 @@ ItemUsePtrTable:
 	dw ItemUseVitamin    ; IRON
 	dw ItemUseVitamin    ; CARBOS
 	dw ItemUseVitamin    ; CALCIUM
+	dw ItemUseVitamin		 ; ZINC
 	dw ItemUseVitamin    ; RARE_CANDY
 	dw UnusableItem      ; DOME_FOSSIL
 	dw UnusableItem      ; HELIX_FOSSIL

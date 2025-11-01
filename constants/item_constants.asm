@@ -48,67 +48,68 @@ DEF SAFARI_ROCK EQU CASCADEBADGE ; overload
 	const IRON          ; $25
 	const CARBOS        ; $26
 	const CALCIUM       ; $27
-	const RARE_CANDY    ; $28
-	const DOME_FOSSIL   ; $29
-	const HELIX_FOSSIL  ; $2A
-	const SECRET_KEY    ; $2B
-	const ITEM_2C       ; $2C ; unused
-	const BIKE_VOUCHER  ; $2D
-	const X_ACCURACY    ; $2E
-	const LEAF_STONE    ; $2F
-	const CARD_KEY      ; $30
-	const NUGGET        ; $31
-	const ITEM_32       ; $32 ; unused
-	const POKE_DOLL     ; $33
-	const FULL_HEAL     ; $34
-	const REVIVE        ; $35
-	const MAX_REVIVE    ; $36
-	const GUARD_SPEC    ; $37
-	const SUPER_REPEL   ; $38
-	const MAX_REPEL     ; $39
-	const DIRE_HIT      ; $3A
-	const COIN          ; $3B
-	const FRESH_WATER   ; $3C
-	const SODA_POP      ; $3D
-	const LEMONADE      ; $3E
-	const S_S_TICKET    ; $3F
-	const GOLD_TEETH    ; $40
-	const X_ATTACK      ; $41
-	const X_DEFEND      ; $42
-	const X_SPEED       ; $43
-	const X_SPECIAL     ; $44
-	const COIN_CASE     ; $45
-	const OAKS_PARCEL   ; $46
-	const ITEMFINDER    ; $47
-	const SILPH_SCOPE   ; $48
-	const POKE_FLUTE    ; $49
-	const LIFT_KEY      ; $4A
-	const EXP_ALL       ; $4B
-	const OLD_ROD       ; $4C
-	const GOOD_ROD      ; $4D
-	const SUPER_ROD     ; $4E
-	const PP_UP         ; $4F
-	const ETHER         ; $50
-	const MAX_ETHER     ; $51
-	const ELIXER        ; $52
-	const MAX_ELIXER    ; $53
+	const ZINC					; $28
+	const RARE_CANDY    ; $29
+	const DOME_FOSSIL   ; $2A
+	const HELIX_FOSSIL  ; $2B
+	const SECRET_KEY    ; $2C
+	const ITEM_2C       ; $2D ; unused
+	const BIKE_VOUCHER  ; $2E
+	const X_ACCURACY    ; $2F
+	const LEAF_STONE    ; $30
+	const CARD_KEY      ; $31
+	const NUGGET        ; $32
+	const ITEM_32       ; $33 ; unused
+	const POKE_DOLL     ; $34
+	const FULL_HEAL     ; $35
+	const REVIVE        ; $36
+	const MAX_REVIVE    ; $37
+	const GUARD_SPEC    ; $38
+	const SUPER_REPEL   ; $39
+	const MAX_REPEL     ; $3A
+	const DIRE_HIT      ; $3B
+	const COIN          ; $3C
+	const FRESH_WATER   ; $3D
+	const SODA_POP      ; $3E
+	const LEMONADE      ; $3F
+	const S_S_TICKET    ; $40
+	const GOLD_TEETH    ; $41
+	const X_ATTACK      ; $42
+	const X_DEFEND      ; $43
+	const X_SPEED       ; $44
+	const X_SPECIAL     ; $45
+	const COIN_CASE     ; $46
+	const OAKS_PARCEL   ; $47
+	const ITEMFINDER    ; $48
+	const SILPH_SCOPE   ; $49
+	const POKE_FLUTE    ; $4A
+	const LIFT_KEY      ; $4B
+	const EXP_ALL       ; $4C
+	const OLD_ROD       ; $4D
+	const GOOD_ROD      ; $4E
+	const SUPER_ROD     ; $4F
+	const PP_UP         ; $50
+	const ETHER         ; $51
+	const MAX_ETHER     ; $52
+	const ELIXER        ; $53
+	const MAX_ELIXER    ; $54
 DEF NUM_ITEMS EQU const_value - 1
 
 ; elevator floors use item IDs
-	const FLOOR_B2F     ; $54
-	const FLOOR_B1F     ; $55
-	const FLOOR_1F      ; $56
-	const FLOOR_2F      ; $57
-	const FLOOR_3F      ; $58
-	const FLOOR_4F      ; $59
-	const FLOOR_5F      ; $5A
-	const FLOOR_6F      ; $5B
-	const FLOOR_7F      ; $5C
-	const FLOOR_8F      ; $5D
-	const FLOOR_9F      ; $5E
-	const FLOOR_10F     ; $5F
-	const FLOOR_11F     ; $60
-	const FLOOR_B4F     ; $61
+	const FLOOR_B2F     ; $55
+	const FLOOR_B1F     ; $56
+	const FLOOR_1F      ; $57
+	const FLOOR_2F      ; $58
+	const FLOOR_3F      ; $59
+	const FLOOR_4F      ; $5A
+	const FLOOR_5F      ; $5B
+	const FLOOR_6F      ; $5C
+	const FLOOR_7F      ; $5D
+	const FLOOR_8F      ; $5E
+	const FLOOR_9F      ; $5F
+	const FLOOR_10F     ; $60
+	const FLOOR_11F     ; $61
+	const FLOOR_B4F     ; $62
 DEF NUM_FLOORS EQU const_value - 1 - NUM_ITEMS
 
 	const_next $C4

@@ -19,6 +19,7 @@ UsableItems_PartyMenu:
 	db IRON
 	db CARBOS
 	db CALCIUM
+	db ZINC
 	db RARE_CANDY
 	db LEAF_STONE
 	db FULL_HEAL

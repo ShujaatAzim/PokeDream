@@ -39,6 +39,7 @@ KeyItemFlags:
 	dbit FALSE ; IRON
 	dbit FALSE ; CARBOS
 	dbit FALSE ; CALCIUM
+	dbit FALSE ; ZINC
 	dbit FALSE ; RARE_CANDY
 	dbit TRUE  ; DOME_FOSSIL
 	dbit TRUE  ; HELIX_FOSSIL

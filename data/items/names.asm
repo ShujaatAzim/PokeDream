@@ -39,6 +39,7 @@ ItemNames::
 	li "IRON"
 	li "CARBOS"
 	li "CALCIUM"
+	li "ZINC"
 	li "RARE CANDY"
 	li "DOME FOSSIL"
 	li "HELIX FOSSIL"
