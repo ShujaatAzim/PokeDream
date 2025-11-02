@@ -77,39 +77,40 @@ DEF SAFARI_ROCK EQU CASCADEBADGE ; overload
 	const X_ATTACK      ; $42
 	const X_DEFEND      ; $43
 	const X_SPEED       ; $44
-	const X_SPECIAL     ; $45
-	const COIN_CASE     ; $46
-	const OAKS_PARCEL   ; $47
-	const ITEMFINDER    ; $48
-	const SILPH_SCOPE   ; $49
-	const POKE_FLUTE    ; $4A
-	const LIFT_KEY      ; $4B
-	const EXP_ALL       ; $4C
-	const OLD_ROD       ; $4D
-	const GOOD_ROD      ; $4E
-	const SUPER_ROD     ; $4F
-	const PP_UP         ; $50
-	const ETHER         ; $51
-	const MAX_ETHER     ; $52
-	const ELIXER        ; $53
-	const MAX_ELIXER    ; $54
+	const X_SP_ATK      ; $45
+	const X_SP_DEF			; $46
+	const COIN_CASE     ; $47
+	const OAKS_PARCEL   ; $48
+	const ITEMFINDER    ; $49
+	const SILPH_SCOPE   ; $4A
+	const POKE_FLUTE    ; $4B
+	const LIFT_KEY      ; $4C
+	const EXP_ALL       ; $4D
+	const OLD_ROD       ; $4E
+	const GOOD_ROD      ; $4F
+	const SUPER_ROD     ; $50
+	const PP_UP         ; $51
+	const ETHER         ; $52
+	const MAX_ETHER     ; $53
+	const ELIXER        ; $54
+	const MAX_ELIXER    ; $55
 DEF NUM_ITEMS EQU const_value - 1
 
 ; elevator floors use item IDs
-	const FLOOR_B2F     ; $55
-	const FLOOR_B1F     ; $56
-	const FLOOR_1F      ; $57
-	const FLOOR_2F      ; $58
-	const FLOOR_3F      ; $59
-	const FLOOR_4F      ; $5A
-	const FLOOR_5F      ; $5B
-	const FLOOR_6F      ; $5C
-	const FLOOR_7F      ; $5D
-	const FLOOR_8F      ; $5E
-	const FLOOR_9F      ; $5F
-	const FLOOR_10F     ; $60
-	const FLOOR_11F     ; $61
-	const FLOOR_B4F     ; $62
+	const FLOOR_B2F     ; $56
+	const FLOOR_B1F     ; $57
+	const FLOOR_1F      ; $58
+	const FLOOR_2F      ; $59
+	const FLOOR_3F      ; $5A
+	const FLOOR_4F      ; $5B
+	const FLOOR_5F      ; $5C
+	const FLOOR_6F      ; $5D
+	const FLOOR_7F      ; $5E
+	const FLOOR_8F      ; $5F
+	const FLOOR_9F      ; $60
+	const FLOOR_10F     ; $61
+	const FLOOR_11F     ; $62
+	const FLOOR_B4F     ; $63
 DEF NUM_FLOORS EQU const_value - 1 - NUM_ITEMS
 
 	const_next $C4
