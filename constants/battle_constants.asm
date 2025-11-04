@@ -22,8 +22,8 @@ DEF NUM_STATS EQU const_value - 1
 	const MOD_ATTACK
 	const MOD_DEFENSE
 	const MOD_SPEED
-	const STAT_SPCLATK
-	const STAT_SPCLDEF
+	const MOD_SPCLATK
+	const MOD_SPCLDEF
 	const MOD_ACCURACY
 	const MOD_EVASION
 	const_skip 2

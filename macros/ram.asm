@@ -37,8 +37,8 @@ MACRO party_struct
 \1Attack::     dw
 \1Defense::    dw
 \1Speed::      dw
-\1SpclAtkExp:: dw
-\1SpclDefExp:: dw
+\1SpclAtk:: dw
+\1SpclDef:: dw
 ENDM
 
 ; The distance from HP to DVs is still 11 bytes
@@ -60,8 +60,8 @@ MACRO battle_struct
 \1Attack::     dw
 \1Defense::    dw
 \1Speed::      dw
-\1SpclAtkExp:: dw
-\1SpclDefExp:: dw
+\1SpclAtk:: dw
+\1SpclDef:: dw
 \1PP::         ds NUM_MOVES
 ENDM
 
