@@ -33,6 +33,10 @@ ENDC
 
 PrepareNewGameDebug: ; dummy except in _DEBUG
 IF DEF(_DEBUG)
+
+	ld a, TEXT_DELAY_FAST
+	ld [wOptions], a
+
 	xor a ; PLAYER_PARTY_DATA
 	ld [wMonDataLocation], a
 
