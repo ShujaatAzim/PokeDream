@@ -43,7 +43,7 @@ _Route1Youngster2Text::
 	cont "quicker that way."
 	done
 
-_Route1PokeballGiftIntroText::
+_Route1PokeballGiftNoDexText::
 	text "Hey there!"
 	line "Are you a new"
 	cont "trainer?"
@@ -53,16 +53,34 @@ _Route1PokeballGiftIntroText::
 	cont "what it was like"
 	cont "to be new!"
 
-	para "You'll need some"
-	line "# BALLs in"
-	cont "order to catch"
-	cont "#MON."
+	para "Come back and"
+	line "speak to me in"
+	cont "a little while."
 
-	para "I have extras,"
-	line "so here you go!"
+	para "I'll give you"
+	line "something useful!"
+	done
+
+_Route1PokeballGiftGotDexText::
+	text "Hello again!"
+	line ""
+
+	para "You're already"
+	line "looking stronger!"
+
+	para "You're ready to"
+	line "start catching"
+	cont "#MON!"
+
+	para "But you'll need"
+	line "some # BALLs"
+	cont "to do that."
+
+	para "I have plenty, so"
+	line "here you go!"
 	prompt
 
-_Route1PokeballGiftGotText::
+_Route1PokeballGiftGivenText::
 	text "<PLAYER> got 5"
 	line "@"
 	text_ram wStringBuffer
@@ -72,9 +90,9 @@ _Route1PokeballGiftGotText::
 _Route1PokeballGiftAfterText::
 	text "A piece of"
 	line "advice from"
-	cont "veteran:"
+	cont "a veteran:"
 
-	para "you can never"
+	para "You can never"
 	line "have too many"
 	cont "# BALLs!"
 	done
@@ -82,6 +100,33 @@ _Route1PokeballGiftAfterText::
 _Route1PokeballGiftNoRoomText::
 	text "You don't have"
 	line "room for these!"
+	done
+
+_Route1FisherText::
+	text "I love fishing!"
+	line ""
+
+	para "It's a great way"
+	line "to find water-"
+	cont "type #MON!"
+	done
+
+_Route1YoungsterBattleText::
+	text "Hey! I'm new"
+	line "too! You'll be" 
+	cont "my first battle!"
+	done
+
+_Route1YoungsterEndBattleText::
+	text "Aw, my"
+	line "first battle and"
+	cont "my first loss..."
+	prompt
+
+_Route1YoungsterAfterBattleText::
+	text "I'll train hard!"
+	line "I won't lose next"
+	cont "time we meet!"
 	done
 
 _Route1SignText::
