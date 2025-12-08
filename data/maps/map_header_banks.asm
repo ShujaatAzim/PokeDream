@@ -254,4 +254,5 @@ MapHeaderBanks::
 	db BANK(PalletRanchGate_h)
 	db BANK(PalletTownSchoolHouse_h)
 	db BANK(PalletMart_h)
+	db BANK(Route1Cave_h)
 	assert_table_length NUM_MAPS

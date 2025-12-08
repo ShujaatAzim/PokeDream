@@ -254,4 +254,5 @@ MapHeaderPointers::
 	dw PalletRanchGate_h
 	dw PalletTownSchoolHouse_h
 	dw PalletMart_h
+	dw Route1Cave_h
 	assert_table_length NUM_MAPS

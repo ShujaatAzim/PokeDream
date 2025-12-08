@@ -1244,3 +1244,8 @@ INCLUDE "data/maps/headers/PalletMart.asm"
 INCLUDE "scripts/PalletMart.asm"
 INCLUDE "data/maps/objects/PalletMart.asm"
 PalletMart_Blocks: INCBIN "maps/PalletMart.blk"
+
+INCLUDE "data/maps/headers/Route1Cave.asm"
+INCLUDE "scripts/Route1Cave.asm"
+INCLUDE "data/maps/objects/Route1Cave.asm"
+Route1Cave_Blocks: INCBIN "maps/Route1Cave.blk"
