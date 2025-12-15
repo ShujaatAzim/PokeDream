@@ -18,6 +18,8 @@ Route1Cave_TextPointers:
   def_text_pointers
   ; NPCs
   dw_const Route1CaveScientistText,            TEXT_ROUTE_1_CAVE_SCIENTIST
+  ; Items
+  dw_const PickUpItemText,                     TEXT_ROUTE_1_CAVE_HOUSEKEYS
   ; Trainers
   dw_const Route1CaveHikerTrainerText,         TEXT_ROUTE_1_CAVE_HIKER_TRAINER
   ; Background / Misc
@@ -25,7 +27,7 @@ Route1Cave_TextPointers:
 
 
 Route1CaveTrainerHeaders:
-	def_trainers 2
+	def_trainers 3
 Route1CaveTrainerHeader0:
 	trainer EVENT_BEAT_ROUTE_1_CAVE_TRAINER_0, 3, Route1CaveHikerBattleText, Route1CaveHikerEndBattleText, Route1CaveHikerAfterBattleText
   db -1 ; end

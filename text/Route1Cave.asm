@@ -15,8 +15,8 @@ _Route1CaveScientistText::
 ; Trainers
 _Route1CaveHikerBattleText::
   text "I hear there are"
-  line "ONIX in this"
-  cont "cave!"
+  line "rare ONIX in this"
+  cont "here cave!"
   done
 
 _Route1CaveHikerEndBattleText::
@@ -27,7 +27,7 @@ _Route1CaveHikerEndBattleText::
 _Route1CaveHikerAfterBattleText::
   text "ONIX are very"
   line "strong. I would"
-  cont "have won if I"
+  cont "have won if I had"
   cont "caught one!"
   done
 
