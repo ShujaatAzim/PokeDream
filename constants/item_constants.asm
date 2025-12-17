@@ -53,7 +53,7 @@ DEF SAFARI_ROCK EQU CASCADEBADGE ; overload
 	const DOME_FOSSIL   ; $2A
 	const HELIX_FOSSIL  ; $2B
 	const SECRET_KEY    ; $2C
-	const ITEM_2C       ; $2D ; unused
+	const HOUSEKEYS     ; $2D
 	const BIKE_VOUCHER  ; $2E
 	const X_ACCURACY    ; $2F
 	const LEAF_STONE    ; $30
