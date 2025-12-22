@@ -151,12 +151,15 @@ PalletTownNoopScript:
 
 PalletTown_TextPointers:
 	def_text_pointers
+	; NPCS
 	dw_const PalletTownOakText,              TEXT_PALLETTOWN_OAK
 	dw_const PalletTownGirlText,             TEXT_PALLETTOWN_GIRL
 	dw_const PalletTownFisherText,           TEXT_PALLETTOWN_FISHER
 	dw_const PalletTownGuardText,						 TEXT_PALLETTOWN_GUARD
 	dw_const PalletTownTrainerText,					 TEXT_PALLETTOWN_TRAINER
 	dw_const PalletTownWomanText,						 TEXT_PALLETTOWN_WOMAN
+	
+	; Background / Misc
 	dw_const PalletTownOaksLabSignText,      TEXT_PALLETTOWN_OAKSLAB_SIGN
 	dw_const PalletTownSignText,             TEXT_PALLETTOWN_SIGN
 	dw_const PalletTownPlayersHouseSignText, TEXT_PALLETTOWN_PLAYERSHOUSE_SIGN
@@ -195,6 +198,38 @@ PalletTownOakText:
 .ItsUnsafeText:
 	text_far _PalletTownOakItsUnsafeText
 	text_end
+
+PalletTown_RemoveHouseKeys:
+	ld hl, wBagItems
+	ld bc, 0
+.loop
+	ld a, [hli]
+	cp $ff
+	ret z
+	cp HOUSEKEYS
+	jr z, .found
+	inc hl
+	inc c
+	jr .loop
+.found
+	ld hl, wNumBagItems
+	ld a, c
+	ld [wWhichPokemon], a   ; bag slot index
+	ld a, 1
+	ld [wItemQuantity], a
+	jp RemoveItemFromInventory
+
+PalletTown_CheckHasHouseKeys:
+	ld hl, wBagItems
+.loop
+	ld a, [hli]
+	cp $ff
+	ret z              ; Z: not found
+	cp HOUSEKEYS
+	jr nz, .loop
+	; found: return NZ
+	or a               ; ensure NZ (A != 0)
+	ret
 
 PalletTownGirlText:
 	text_far _PalletTownGirlText
