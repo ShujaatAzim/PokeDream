@@ -37,7 +37,7 @@ SpriteSheetPointerTable:
 	overworld_sprite MiddleAgedWomanSprite, 12  ; SPRITE_MIDDLE_AGED_WOMAN
 	overworld_sprite BrunetteGirlSprite, 12     ; SPRITE_BRUNETTE_GIRL
 	overworld_sprite LanceSprite, 12            ; SPRITE_LANCE
-	overworld_sprite ScientistSprite, 12        ; SPRITE_UNUSED_SCIENTIST
+	overworld_sprite OfficerJennySprite, 12     ; SPRITE_UNUSED_SCIENTIST
 	overworld_sprite ScientistSprite, 12        ; SPRITE_SCIENTIST
 	overworld_sprite RockerSprite, 12           ; SPRITE_ROCKER
 	overworld_sprite SwimmerSprite, 12          ; SPRITE_SWIMMER
@@ -79,4 +79,6 @@ SpriteSheetPointerTable:
 	overworld_sprite GamblerAsleepSprite, 4     ; SPRITE_UNUSED_GAMBLER_ASLEEP_1
 	overworld_sprite GamblerAsleepSprite, 4     ; SPRITE_UNUSED_GAMBLER_ASLEEP_2
 	overworld_sprite GamblerAsleepSprite, 4     ; SPRITE_GAMBLER_ASLEEP
+	overworld_sprite ChanseySprite, 4						; SPRITE_CHANSEY
+	overworld_sprite NurseJoySprite, 4					; SPRITE_NURSE_JOY
 	assert_table_length NUM_SPRITES

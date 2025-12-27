@@ -72,3 +72,8 @@ AgathaSprite::           INCBIN "gfx/sprites/agatha.2bpp"
 BrunoSprite::            INCBIN "gfx/sprites/bruno.2bpp"
 LoreleiSprite::          INCBIN "gfx/sprites/lorelei.2bpp"
 SeelSprite::             INCBIN "gfx/sprites/seel.2bpp"
+
+SECTION "NPC Sprites 3", ROMX
+OfficerJennySprite::     INCBIN "gfx/sprites/officer_jenny.2bpp"
+ChanseySprite::          INCBIN "gfx/sprites/chansey.2bpp"
+NurseJoySprite::         INCBIN "gfx/sprites/nurse_joy.2bpp"
