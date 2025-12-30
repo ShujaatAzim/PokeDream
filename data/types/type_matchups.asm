@@ -13,6 +13,7 @@ TypeEffects:
 	; ------------------------
 	db NORMAL,       ROCK,         NOT_VERY_EFFECTIVE
 	db NORMAL,       STEEL,        NOT_VERY_EFFECTIVE
+	
 	db NORMAL,       GHOST,        NO_EFFECT
 
 	; ------------------------
