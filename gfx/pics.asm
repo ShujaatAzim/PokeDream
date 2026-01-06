@@ -236,7 +236,7 @@ GloomPicFront::        INCBIN "gfx/pokemon/front/gloom.pic"
 GloomPicBack::         INCBIN "gfx/pokemon/back/gloomb.pic"
 
 
-SECTION "Pics 6", ROMX
+SECTION "Trainer Pics 1", ROMX
 
 YoungsterPic::     INCBIN "gfx/trainers/youngster.pic"
 BugCatcherPic::    INCBIN "gfx/trainers/bugcatcher.pic"
@@ -262,6 +262,11 @@ TamerPic::         INCBIN "gfx/trainers/tamer.pic"
 BirdKeeperPic::    INCBIN "gfx/trainers/birdkeeper.pic"
 BlackbeltPic::     INCBIN "gfx/trainers/blackbelt.pic"
 Rival1Pic::        INCBIN "gfx/trainers/rival1.pic"
+TeamRocketPic::    INCBIN "gfx/trainers/teamrocket.pic"
+
+
+SECTION "Trainer Pics 2", ROMX
+
 ProfOakPic::       INCBIN "gfx/trainers/prof.oak.pic"
 ChiefPic::
 ScientistPic::     INCBIN "gfx/trainers/scientist.pic"
@@ -286,7 +291,7 @@ AgathaPic::        INCBIN "gfx/trainers/agatha.pic"
 LancePic::         INCBIN "gfx/trainers/lance.pic"
 
 
-SECTION "Pics 7", ROMX
+SECTION "Pics 6", ROMX
 
 RedPicBack::          INCBIN "gfx/player/redb.pic"
 OldManPicBack::       INCBIN "gfx/battle/oldmanb.pic"
@@ -337,7 +342,7 @@ ParasectPicFront::    INCBIN "gfx/pokemon/front/parasect.pic"
 ParasectPicBack::     INCBIN "gfx/pokemon/back/parasectb.pic"
 
 
-SECTION "Pics 8", ROMX
+SECTION "Pics 7", ROMX
 
 EkansPicFront::       INCBIN "gfx/pokemon/front/ekans.pic"
 EkansPicBack::        INCBIN "gfx/pokemon/back/ekansb.pic"
