@@ -542,10 +542,13 @@
 
 ; Viridian Forest events
 	const_next $560
-	const_skip 2
+	const_skip 1
 	const EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_0
 	const EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_1
 	const EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_2
+	const EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_3 ; Jessie
+	const EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_4 ; James
+	const EVENT_VIRIDIAN_FOREST_ROCKETS_GONE
 
 ; Mt. Moon events
 	const_next $570
