@@ -17,7 +17,6 @@ INCLUDE "audio/headers/musicheaders2.asm"
 SECTION "Music Headers 3", ROMX
 INCLUDE "audio/headers/musicheaders3.asm"
 
-
 SECTION "Sound Effects 1", ROMX
 
 INCLUDE "audio/sfx/noise_instrument01_1.asm"
@@ -444,4 +443,7 @@ INCLUDE "audio/music/introbattle.asm"
 INCLUDE "audio/music/surfing.asm"
 INCLUDE "audio/music/jigglypuffsong.asm"
 INCLUDE "audio/music/halloffame.asm"
+INCLUDE "audio/music/meetteamrocket.asm"
+
+SECTION "Music 4", ROMX
 INCLUDE "audio/music/credits.asm"
