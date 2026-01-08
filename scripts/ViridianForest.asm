@@ -9,20 +9,29 @@ ViridianForest_Script:
 
 ViridianForest_ScriptPointers:
 	def_script_pointers
-	dw_const CheckFightingMapTrainers,              SCRIPT_VIRIDIANFOREST_DEFAULT
+	dw_const CheckFightingMapTrainers,		          SCRIPT_VIRIDIANFOREST_DEFAULT
 	dw_const DisplayEnemyTrainerTextAndStartBattle, SCRIPT_VIRIDIANFOREST_START_BATTLE
-	dw_const EndTrainerBattle,                      SCRIPT_VIRIDIANFOREST_END_BATTLE
+	dw_const EndTrainerBattle,             					SCRIPT_VIRIDIANFOREST_END_BATTLE
+	dw_const ViridianForestTeamRocketVanish,				SCRIPT_VIRIDIANFOREST_TEAMROCKET_VANISH
 
 ViridianForest_TextPointers:
 	def_text_pointers
-	dw_const ViridianForestYoungster1Text,      TEXT_VIRIDIANFOREST_YOUNGSTER1
+	; Trainers
 	dw_const ViridianForestYoungster2Text,      TEXT_VIRIDIANFOREST_YOUNGSTER2
 	dw_const ViridianForestYoungster3Text,      TEXT_VIRIDIANFOREST_YOUNGSTER3
 	dw_const ViridianForestYoungster4Text,      TEXT_VIRIDIANFOREST_YOUNGSTER4
+	dw_const ViridianForestJessieText,					TEXT_VIRIDIANFOREST_JESSIE
+	dw_const ViridianForestTeamRocketLeaveText,	TEXT_VIRIDIANFOREST_TEAMROCKET_LEAVE
+	dw_const ViridianForestJamesText,						TEXT_VIRIDIANFOREST_JAMES
+
+	; NPCs
+	dw_const ViridianForestYoungster1Text,      TEXT_VIRIDIANFOREST_YOUNGSTER1
+	dw_const ViridianForestYoungster5Text,      TEXT_VIRIDIANFOREST_YOUNGSTER5
+
+	; Items & Signs
 	dw_const PickUpItemText,                    TEXT_VIRIDIANFOREST_ANTIDOTE
 	dw_const PickUpItemText,                    TEXT_VIRIDIANFOREST_POTION
 	dw_const PickUpItemText,                    TEXT_VIRIDIANFOREST_POKE_BALL
-	dw_const ViridianForestYoungster5Text,      TEXT_VIRIDIANFOREST_YOUNGSTER5
 	dw_const ViridianForestTrainerTips1Text,    TEXT_VIRIDIANFOREST_TRAINER_TIPS1
 	dw_const ViridianForestUseAntidoteSignText, TEXT_VIRIDIANFOREST_USE_ANTIDOTE_SIGN
 	dw_const ViridianForestTrainerTips2Text,    TEXT_VIRIDIANFOREST_TRAINER_TIPS2
@@ -31,13 +40,17 @@ ViridianForest_TextPointers:
 	dw_const ViridianForestLeavingSignText,     TEXT_VIRIDIANFOREST_LEAVING_SIGN
 
 ViridianForestTrainerHeaders:
-	def_trainers 2
+	def_trainers
 ViridianForestTrainerHeader0:
 	trainer EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_0, 4, ViridianForestYoungster2BattleText, ViridianForestYoungster2EndBattleText, ViridianForestYoungster2AfterBattleText
 ViridianForestTrainerHeader1:
 	trainer EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_1, 4, ViridianForestYoungster3BattleText, ViridianForestYoungster3EndBattleText, ViridianForestYoungster3AfterBattleText
 ViridianForestTrainerHeader2:
 	trainer EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_2, 1, ViridianForestYoungster4BattleText, ViridianForestYoungster4EndBattleText, ViridianForestYoungster4AfterBattleText
+ViridianForestTrainerHeader3:
+	trainer EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_3, 1, ViridianForestTeamRocketBattleText, ViridianForestTeamRocketEndBattleText, ViridianForestTeamRocketAfterBattleText
+ViridianForestTrainerHeader4:
+	trainer EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_4, 1, ViridianForestTeamRocketBattleText, ViridianForestTeamRocketEndBattleText, ViridianForestTeamRocketAfterBattleText
 	db -1 ; end
 
 ViridianForestYoungster1Text:
@@ -59,6 +72,18 @@ ViridianForestYoungster3Text:
 ViridianForestYoungster4Text:
 	text_asm
 	ld hl, ViridianForestTrainerHeader2
+	call TalkToTrainer
+	jp TextScriptEnd
+
+ViridianForestJessieText:
+	text_asm
+	ld hl, ViridianForestTrainerHeader3
+	call TalkToTrainer
+	jp TextScriptEnd
+
+ViridianForestJamesText:
+	text_asm
+	ld hl, ViridianForestTrainerHeader4
 	call TalkToTrainer
 	jp TextScriptEnd
 
@@ -101,6 +126,68 @@ ViridianForestYoungster4AfterBattleText:
 ViridianForestYoungster5Text:
 	text_far _ViridianForestYoungster5Text
 	text_end
+
+ViridianForestTeamRocketBattleText:
+	text_far _ViridianForestTeamRocketBattleText
+	text_end
+
+ViridianForestTeamRocketEndBattleText:
+	text_far _ViridianForestTeamRocketEndBattleText
+	text_end
+
+ViridianForestTeamRocketAfterBattleText:
+	text_asm
+	; Print your “we’re blasting off again” (and any other lines you want)
+	ld hl, ViridianForestTeamRocketLeaveText
+	call PrintText
+
+	; Queue the fade/hide to happen AFTER the textbox closes
+	ld a, SCRIPT_VIRIDIANFOREST_TEAMROCKET_VANISH
+	ld [wViridianForestCurScript], a
+	ld [wCurMapScript], a
+
+	jp TextScriptEnd
+
+ViridianForestTeamRocketVanish:
+	call GBFadeOutToBlack
+
+	; Hide Jessie
+	ld a, HS_VIRIDIAN_FOREST_JESSIE
+	ld [wMissableObjectIndex], a
+	predef HideObject
+
+	; Hide James
+	ld a, HS_VIRIDIAN_FOREST_JAMES
+	ld [wMissableObjectIndex], a
+	predef HideObject
+
+	call UpdateSprites
+	call Delay3
+	call GBFadeInFromBlack
+
+	; Mark both trainers as “beaten” + your custom gate event
+	SetEvent EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_3
+	SetEvent EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_4
+	SetEvent EVENT_VIRIDIAN_FOREST_ROCKETS_GONE
+
+	; Clear any lingering input lock
+	xor a
+	ldh [hJoyHeld], a
+	ld [wJoyIgnore], a
+
+	; Return to default script state
+	xor a
+	ld [wViridianForestCurScript], a
+	ld [wCurMapScript], a
+	ret
+
+
+ViridianForestTeamRocketLeaveText:
+	text_far _ViridianForestTeamRocketLeaveText
+	text_end
+
+
+; Signs
 
 ViridianForestTrainerTips1Text:
 	text_far _ViridianForestTrainerTips1Text
