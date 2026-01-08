@@ -5,12 +5,6 @@ Music_TitleScreen::
 	channel 3, Music_TitleScreen_Ch3
 	channel 4, Music_TitleScreen_Ch4
 
-Music_Credits::
-	channel_count 3
-	channel 1, Music_Credits_Ch1
-	channel 2, Music_Credits_Ch2
-	channel 3, Music_Credits_Ch3
-
 Music_HallOfFame::
 	channel_count 3
 	channel 1, Music_HallOfFame_Ch1
@@ -114,3 +108,9 @@ Music_MeetMaleTrainer::
 	channel 1, Music_MeetMaleTrainer_Ch1
 	channel 2, Music_MeetMaleTrainer_Ch2
 	channel 3, Music_MeetMaleTrainer_Ch3
+
+Music_MeetTeamRocket::
+	channel_count 3
+	channel 1, Music_MeetTeamRocket_Ch1
+	channel 2, Music_MeetTeamRocket_Ch2
+	channel 3, Music_MeetTeamRocket_Ch3
