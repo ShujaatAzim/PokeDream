@@ -1,14 +1,18 @@
 PhysicalToSpecialMoves:
 ; Flying
         db GUST
+        db RAZOR_WIND
 ; Poison
         db ACID
         db SLUDGE
 ; Normal
         db HYPER_BEAM
-        db RAZOR_WIND
-        db SWIFT
         db TRI_ATTACK
+
+; Steel
+        db SONICBOOM
+        db SWIFT
+
         db -1 ; end
 
 SpecialToPhysicalMoves:
@@ -25,4 +29,11 @@ SpecialToPhysicalMoves:
         db THUNDERPUNCH
 ; Ice
         db ICE_PUNCH
+; Dark
+        db BITE
+        db PAY_DAY
+; Fairy
+        db DOUBLESLAP
+        db POUND
+
         db -1 ; end
