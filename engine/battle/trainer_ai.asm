@@ -697,9 +697,15 @@ AIUseXSpeed:
 	ld a, X_SPEED
 	jr AIIncreaseStat
 
-AIUseXSpecial:
-	ld b, $D
-	ld a, X_SPECIAL
+AIUseXSpAtk:
+	ld b, SPCLATK_UP1_EFFECT
+	ld a, X_SP_ATK
+	jr AIIncreaseStat
+
+AIUseXSpDef:
+	ld b, SPCLDEF_UP1_EFFECT
+	ld a, X_SP_DEF
+	jr AIIncreaseStat
 	; fallthrough
 
 AIIncreaseStat:
