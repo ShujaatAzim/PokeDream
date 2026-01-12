@@ -1,6 +1,40 @@
 AskName:
 	call SaveScreenTilesToBuffer1
 	call GetPredefRegisters
+; The following SKIPS asking for nicknames when starting debug mode, saving time.
+; However, this also skips asking for nicknames for any mons caught in debug mode.
+; It could be abstracted into another subroutine for reuse, but is a low priority.
+IF DEF(_DEBUG) 
+	; HL is the destination nickname buffer (from GetPredefRegisters)
+	ld d, h
+	ld e, l
+	push de
+
+	; Pre-fill wNameBuffer with terminators so the nickname is cleanly padded.
+	ld hl, wNameBuffer
+	ld b, NAME_LENGTH
+	ld a, "@"
+.fill
+	ld [hli], a
+	dec b
+	jr nz, .fill
+
+	; Get the mon's default name into wStringBuffer.
+	ld a, [wCurPartySpecies]
+	ld [wNamedObjectIndex], a
+	call GetMonName
+
+	; Copy the name string into wNameBuffer (up to '@').
+	ld hl, wStringBuffer
+	ld de, wNameBuffer
+	call CopyString
+
+	; Copy the padded name buffer into the destination nickname buffer.
+	pop de
+	ld hl, wNameBuffer
+	ld bc, NAME_LENGTH
+	jp CopyData
+ENDC
 	push hl
 	ld a, [wIsInBattle]
 	dec a
