@@ -225,8 +225,8 @@ _OaksLabRivalWhatAboutMeText::
 	done
 
 _OaksLabOakBePatientText::
-	text "OAK: Be patient!"
-	line "<RIVAL>, you can"
+	text "OAK: Be patient,"
+	line "<RIVAL>! You can"
 	cont "have one too!"
 	done
 

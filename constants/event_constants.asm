@@ -222,6 +222,8 @@
 	const_next $3C0
 	const EVENT_GOT_POTION_SAMPLE
 	const EVENT_GOT_POKEBALL_GIFT
+	const_skip 3
+	const EVENT_BEAT_ROUTE_1_TRAINER_0
 
 ; Route 2 events
 	const_next $3D8
