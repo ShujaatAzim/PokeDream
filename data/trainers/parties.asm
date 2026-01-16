@@ -259,6 +259,8 @@ HikerData:
 	db 19, GEODUDE, MACHOP, GEODUDE, GEODUDE, 0
 	db 20, ONIX, ONIX, GEODUDE, 0
 	db 21, GEODUDE, GRAVELER, 0
+; Route 1 Cave
+	db 4, GEODUDE, GEODUDE, 0
 
 BikerData:
 ; Route 13

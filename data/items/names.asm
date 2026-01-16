@@ -44,7 +44,7 @@ ItemNames::
 	li "DOME FOSSIL"
 	li "HELIX FOSSIL"
 	li "SECRET KEY"
-	li "?????" ; ITEM_2C
+	li "HOUSEKEYS"
 	li "BIKE VOUCHER"
 	li "X ACCURACY"
 	li "LEAF STONE"

@@ -226,6 +226,14 @@
 	const EVENT_BEAT_ROUTE_1_TRAINER_0
 	const EVENT_BEAT_ROUTE_1_TRAINER_1
 	const EVENT_BEAT_ROUTE_1_TRAINER_2
+	const_skip 5
+
+; Route 1 Cave events
+	const_next $3D0
+	const_skip 3
+	const EVENT_BEAT_ROUTE_1_CAVE_TRAINER_0
+	const EVENT_GOT_HOUSEKEYS
+	const_skip 3
 
 ; Route 2 events
 	const_next $3D8
