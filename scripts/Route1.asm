@@ -15,19 +15,35 @@ Route1_ScriptPointers:
 
 Route1_TextPointers:
 	def_text_pointers
-	dw_const Route1Youngster1Text, 			 TEXT_ROUTE1_YOUNGSTER1
-	dw_const Route1Youngster2Text, 			 TEXT_ROUTE1_YOUNGSTER2
-	dw_const Route1VeteranText, 			 	 TEXT_ROUTE1_VETERAN
-	dw_const Route1FisherText,		 			 TEXT_ROUTE1_FISHER
-	dw_const Route1YoungsterTrainerText, TEXT_ROUTE1_YOUNGSTER_TRAINER
-	dw_const Route1SignText,       			 TEXT_ROUTE1_SIGN
+	; NPCs
+	dw_const Route1Youngster1Text, 			 	TEXT_ROUTE1_YOUNGSTER1
+	dw_const Route1Youngster2Text, 			 	TEXT_ROUTE1_YOUNGSTER2
+	dw_const Route1VeteranText, 			 	 	TEXT_ROUTE1_VETERAN
+	dw_const Route1FisherText,		 			 	TEXT_ROUTE1_FISHER
+	dw_const Route1Girl1Text,						 	TEXT_ROUTE1_GIRL1
+	dw_const Route1Girl2Text,							TEXT_ROUTE1_GIRL2
+	; Items
+	dw_const PickUpItemText,							TEXT_ROUTE1_POTION
+	; Trainers
+	dw_const Route1YoungsterTrainerText,  TEXT_ROUTE1_YOUNGSTER_TRAINER
+	dw_const Route1BugCatcherTrainerText, TEXT_ROUTE1_BUG_CATCHER_TRAINER
+	dw_const Route1LassTrainerText,				TEXT_ROUTE1_LASS_TRAINER
+	; Background/Misc
+	dw_const Route1SignText,       			 	TEXT_ROUTE1_SIGN
+	dw_const Route1CaveSignText,					TEXT_ROUTE1_CAVE_SIGN
+	dw_const Route1TrainerTips,						TEXT_ROUTE1_TRAINER_TIPS
 
 Route1TrainerHeaders:
-	def_trainers 5
+	def_trainers 8
 Route1TrainerHeader0:
 	trainer EVENT_BEAT_ROUTE_1_TRAINER_0, 4, Route1YoungsterBattleText, Route1YoungsterEndBattleText, Route1YoungsterAfterBattleText
+Route1TrainerHeader1:
+	trainer EVENT_BEAT_ROUTE_1_TRAINER_1, 3, Route1BugCatcherBattleText, Route1BugCatcherEndBattleText, Route1BugCatcherAfterBattleText
+Route1TrainerHeader2:
+	trainer EVENT_BEAT_ROUTE_1_TRAINER_2, 3, Route1LassBattleText, Route1LassEndBattleText, Route1LassAfterBattleText
 	db -1 ; end
 
+; NPCs
 Route1Youngster1Text:
 	text_asm
 	CheckAndSetEvent EVENT_GOT_POTION_SAMPLE
@@ -129,6 +145,15 @@ Route1FisherText:
 	text_far _Route1FisherText
 	text_end
 
+Route1Girl1Text:
+	text_far _Route1Girl1Text
+	text_end
+
+Route1Girl2Text:
+	text_far _Route1Girl2Text
+	text_end
+
+; Trainers
 Route1YoungsterTrainerText:
 	text_asm
 	ld hl, Route1TrainerHeader0
@@ -147,6 +172,51 @@ Route1YoungsterAfterBattleText:
 	text_far _Route1YoungsterAfterBattleText
 	text_end
 
+Route1BugCatcherTrainerText:
+	text_asm
+	ld hl, Route1TrainerHeader1
+	call TalkToTrainer
+	jp TextScriptEnd
+
+Route1BugCatcherBattleText:
+	text_far _Route1BugCatcherBattleText
+	text_end
+
+Route1BugCatcherEndBattleText:
+	text_far _Route1BugCatcherEndBattleText
+	text_end
+
+Route1BugCatcherAfterBattleText:
+	text_far _Route1BugCatcherAfterBattleText
+	text_end
+
+Route1LassTrainerText:
+	text_asm
+	ld hl, Route1TrainerHeader2
+	call TalkToTrainer
+	jp TextScriptEnd
+
+Route1LassBattleText:
+	text_far _Route1LassBattleText
+	text_end
+
+Route1LassEndBattleText:
+	text_far _Route1LassEndBattleText
+	text_end
+
+Route1LassAfterBattleText:
+	text_far _Route1LassAfterBattleText
+	text_end
+
+; Background/Misc.
 Route1SignText:
 	text_far _Route1SignText
+	text_end
+
+Route1TrainerTips:
+	text_far _Route1TrainerTips
+	text_end
+
+Route1CaveSignText:
+	text_far _Route1CaveSignText
 	text_end

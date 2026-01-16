@@ -15,7 +15,7 @@ MapHSPointers:
 	dw NoHS
 	dw SaffronCityHS
 	dw NoHS
-	dw NoHS
+	dw Route1HS
 	dw Route2HS
 	dw NoHS
 	dw Route4HS
@@ -256,6 +256,7 @@ MapHSPointers:
 	dw NoHS ; Pallet Ranch Gate
 	dw NoHS ; Pallet Town Small House 2
 	dw NoHS ; Pallet Mart
+	dw NoHS ; Route 1 Cave
 	assert_table_length NUM_MAPS
 	dw -1 ; end
 
@@ -297,6 +298,8 @@ SaffronCityHS:
 	db SAFFRON_CITY, SAFFRONCITY_ROCKER,         HIDE
 	db SAFFRON_CITY, SAFFRONCITY_ROCKET8,        SHOW
 	db SAFFRON_CITY, SAFFRONCITY_ROCKET9,        HIDE
+Route1HS:
+    db ROUTE_1, ROUTE1_POTION, SHOW
 Route2HS:
 	db ROUTE_2, ROUTE2_MOON_STONE, SHOW
 	db ROUTE_2, ROUTE2_HP_UP,      SHOW

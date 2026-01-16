@@ -253,6 +253,7 @@ WildDataPointers:
 	dw NothingWildMons ; Pallet Ranch Gate
 	dw NothingWildMons ; Pallet Town Small House 2
 	dw NothingWildMons ; Pallet Mart
+	dw Route1CaveWildMons ; Route 1 Cave
 	assert_table_length NUM_MAPS
 	dw -1 ; end
 
@@ -326,3 +327,4 @@ INCLUDE "data/wild/maps/VictoryRoad2F.asm"
 INCLUDE "data/wild/maps/VictoryRoad3F.asm"
 INCLUDE "data/wild/maps/VictoryRoad1F.asm"
 INCLUDE "data/wild/maps/DiglettsCave.asm"
+INCLUDE "data/wild/maps/Route1Cave.asm"

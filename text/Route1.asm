@@ -1,3 +1,4 @@
+; NPCs
 _Route1Youngster1MartSampleText::
 	text "Hi! I work at a"
 	line "#MON MART."
@@ -88,9 +89,8 @@ _Route1PokeballGiftGivenText::
 	text_end
 
 _Route1PokeballGiftAfterText::
-	text "A piece of"
-	line "advice from"
-	cont "a veteran:"
+	text "A piece of advice"
+	line "from a veteran:"
 
 	para "You can never"
 	line "have too many"
@@ -111,10 +111,33 @@ _Route1FisherText::
 	cont "type #MON!"
 	done
 
+_Route1Girl1Text::
+	text "I just caught a"
+	line "PIDGEY! It's a"
+	cont "great beginner"
+	cont "#MON for new"
+	cont "trainers!"
+	done
+
+_Route1Girl2Text::
+	text "People drop items"
+	line "on the ground all"
+	cont "the time."
+	
+	para "Sometimes you can"
+	line "see them, but"
+	cont "other times they"
+	cont "are hidden."
+
+	para "Be sure to look"
+	line "everywhere!"
+	done
+
+; Trainers
 _Route1YoungsterBattleText::
-	text "Hey! I'm new"
-	line "too! You'll be" 
-	cont "my first battle!"
+	text "I'm just starting"
+	line "too! You'll be my" 
+	cont "first battle!"
 	done
 
 _Route1YoungsterEndBattleText::
@@ -129,8 +152,74 @@ _Route1YoungsterAfterBattleText::
 	cont "time we meet!"
 	done
 
+_Route1BugCatcherBattleText::
+	text "I love bug"
+	line "#MON!"
+
+	para "But I can't find"
+	line "any around here."
+	done
+
+_Route1BugCatcherEndBattleText::
+	text "Oh"
+	line "no! My poor bugs!"
+	prompt
+
+_Route1BugCatcherAfterBattleText::
+	text "I hear VIRIDIAN"
+	line "FOREST is full of"
+	cont "bug #MON!"
+
+	para "I can't wait to"
+	line "get there!"
+	done
+
+_Route1LassBattleText::
+	text "I have the cutest"
+	line "#MON in the"
+	cont "world!"
+
+	para "But cute doesn't"
+	line "mean weak!"
+	cont "Wanna see?"
+	done
+
+_Route1LassEndBattleText::
+	text "My cuties!"
+	line "You're mean!"
+	prompt
+
+_Route1LassAfterBattleText::
+	text "Trainers should"
+	line "raise a balanced"
+	cont "and varied team."
+
+	para "Type and cuteness"
+	line "only go so far!"
+	done
+
+; Background/Misc
 _Route1SignText::
 	text "ROUTE 1"
 	line "PALLET TOWN -"
 	cont "VIRIDIAN CITY"
+	done
+
+_Route1TrainerTips::
+	text "TRAINER TIPS"
+
+	para "Use POTIONs in"
+	line "battle to restore"
+	cont "your #MON's HP."
+
+	para "Especially useful"
+	line "in trainer"
+	cont "battles!"
+	done
+
+_Route1CaveSignText::
+	text "Beware! Wild"
+	line "#MON live in"
+	cont "caves, and can"
+	cont "attack anytime!"
 	done

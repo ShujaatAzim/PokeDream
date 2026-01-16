@@ -102,6 +102,8 @@ BugCatcherData:
 ; Route 9
 	db 19, BEEDRILL, BEEDRILL, 0
 	db 20, CATERPIE, WEEDLE, VENONAT, 0
+; Route 1
+	db 4, CATERPIE, WEEDLE, 0
 
 LassData:
 ; Route 3
@@ -131,6 +133,8 @@ LassData:
 ; Celadon Gym
 	db 23, BELLSPROUT, WEEPINBELL, 0
 	db 23, ODDISH, GLOOM, 0
+; Route 1
+	db 5, NIDORAN_F, NIDORAN_M, 0
 
 SailorData:
 ; SS Anne Stern
