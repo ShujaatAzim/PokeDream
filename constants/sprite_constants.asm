@@ -32,7 +32,7 @@
 	const SPRITE_MIDDLE_AGED_WOMAN       ; $1c
 	const SPRITE_BRUNETTE_GIRL           ; $1d
 	const SPRITE_LANCE                   ; $1e
-	const SPRITE_UNUSED_SCIENTIST        ; $1f
+	const SPRITE_OFFICER_JENNY	         ; $1f
 	const SPRITE_SCIENTIST               ; $20
 	const SPRITE_ROCKER                  ; $21
 	const SPRITE_SWIMMER                 ; $22
@@ -75,4 +75,6 @@ DEF FIRST_STILL_SPRITE EQU const_value
 	const SPRITE_UNUSED_GAMBLER_ASLEEP_1 ; $46
 	const SPRITE_UNUSED_GAMBLER_ASLEEP_2 ; $47
 	const SPRITE_GAMBLER_ASLEEP          ; $48
+	const SPRITE_CHANSEY								 ; $49
+	const SPRITE_NURSE_JOY							 ; $4a
 DEF NUM_SPRITES EQU const_value - 1
