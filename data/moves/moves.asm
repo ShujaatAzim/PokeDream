@@ -11,12 +11,12 @@ ENDM
 Moves:
 ; Characteristics of each move.
 	table_width MOVE_LENGTH
-	move POUND,        NO_ADDITIONAL_EFFECT,        40, NORMAL,       100, 35
+	move POUND,        NO_ADDITIONAL_EFFECT,        40, FAIRY,        100, 35
 	move KARATE_CHOP,  NO_ADDITIONAL_EFFECT,        50, NORMAL,       100, 25
-	move DOUBLESLAP,   TWO_TO_FIVE_ATTACKS_EFFECT,  15, NORMAL,        85, 10
+	move DOUBLESLAP,   TWO_TO_FIVE_ATTACKS_EFFECT,  15, FAIRY,         85, 10
 	move COMET_PUNCH,  TWO_TO_FIVE_ATTACKS_EFFECT,  18, NORMAL,        85, 15
 	move MEGA_PUNCH,   NO_ADDITIONAL_EFFECT,        80, NORMAL,        85, 20
-	move PAY_DAY,      PAY_DAY_EFFECT,              40, NORMAL,       100, 20
+	move PAY_DAY,      PAY_DAY_EFFECT,              40, DARK,	        100, 20
 	move FIRE_PUNCH,   BURN_SIDE_EFFECT1,           75, FIRE,         100, 15
 	move ICE_PUNCH,    FREEZE_SIDE_EFFECT1,         75, ICE,          100, 15
 	move THUNDERPUNCH, PARALYZE_SIDE_EFFECT1,       75, ELECTRIC,     100, 15
@@ -54,12 +54,12 @@ Moves:
 	move TWINEEDLE,    TWINEEDLE_EFFECT,            25, BUG,          100, 20
 	move PIN_MISSILE,  TWO_TO_FIVE_ATTACKS_EFFECT,  14, BUG,           85, 20
 	move LEER,         DEFENSE_DOWN1_EFFECT,         0, NORMAL,       100, 30
-	move BITE,         FLINCH_SIDE_EFFECT1,         60, NORMAL,       100, 25
+	move BITE,         FLINCH_SIDE_EFFECT1,         60, DARK,	        100, 25
 	move GROWL,        ATTACK_DOWN1_EFFECT,          0, NORMAL,       100, 40
 	move ROAR,         SWITCH_AND_TELEPORT_EFFECT,   0, NORMAL,       100, 20
 	move SING,         SLEEP_EFFECT,                 0, NORMAL,        55, 15
 	move SUPERSONIC,   CONFUSION_EFFECT,             0, NORMAL,        55, 20
-	move SONICBOOM,    SPECIAL_DAMAGE_EFFECT,        1, NORMAL,        90, 20
+	move SONICBOOM,    NO_ADDITIONAL_EFFECT,        40, STEEL,         90, 20
 	move DISABLE,      DISABLE_EFFECT,               0, NORMAL,        55, 20
 	move ACID,         DEFENSE_DOWN_SIDE_EFFECT,    40, POISON,       100, 30
 	move EMBER,        BURN_SIDE_EFFECT1,           40, FIRE,         100, 25
@@ -139,7 +139,7 @@ Moves:
 	move FIRE_BLAST,   BURN_SIDE_EFFECT2,          120, FIRE,          85,  5
 	move WATERFALL,    NO_ADDITIONAL_EFFECT,        80, WATER,        100, 15
 	move CLAMP,        TRAPPING_EFFECT,             35, WATER,         75, 10
-	move SWIFT,        SWIFT_EFFECT,                60, NORMAL,       100, 20
+	move SWIFT,        SWIFT_EFFECT,                60, STEEL,        100, 20
 	move SKULL_BASH,   CHARGE_EFFECT,              100, NORMAL,       100, 15
 	move SPIKE_CANNON, TWO_TO_FIVE_ATTACKS_EFFECT,  20, NORMAL,       100, 15
 	move CONSTRICT,    SPEED_DOWN_SIDE_EFFECT,      10, NORMAL,       100, 35
