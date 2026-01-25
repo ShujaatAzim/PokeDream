@@ -79,3 +79,4 @@ SECTION "NPC Sprites 3", ROMX
 OfficerJennySprite::     INCBIN "gfx/sprites/officer_jenny.2bpp"
 ChanseySprite::          INCBIN "gfx/sprites/chansey.2bpp"
 NurseJoySprite::         INCBIN "gfx/sprites/nurse_joy.2bpp"
+RocketGirlSprite::       INCBIN "gfx/sprites/rocket_girl.2bpp"

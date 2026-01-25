@@ -69,6 +69,8 @@ SpriteSheetPointerTable:
 	overworld_sprite SeelSprite, 12             ; SPRITE_SEEL
 	overworld_sprite JessieSprite, 12						; SPRITE_JESSIE
 	overworld_sprite JamesSprite, 12						; SPRITE_JAMES
+	overworld_sprite RocketGirlSprite, 12				; SPRITE_ROCKET_GIRL
+	; still sprites
 	overworld_sprite PokeBallSprite, 4          ; SPRITE_POKE_BALL
 	overworld_sprite FossilSprite, 4            ; SPRITE_FOSSIL
 	overworld_sprite BoulderSprite, 4           ; SPRITE_BOULDER

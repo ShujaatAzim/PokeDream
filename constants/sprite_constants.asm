@@ -64,6 +64,7 @@
 	const SPRITE_SEEL                    ; $3c
 	const SPRITE_JESSIE									 ; $3d
 	const SPRITE_JAMES									 ; $3e
+	const SPRITE_ROCKET_GIRL						 ; $3f
 DEF FIRST_STILL_SPRITE EQU const_value
 	const SPRITE_POKE_BALL               ; $3f
 	const SPRITE_FOSSIL                  ; $40
