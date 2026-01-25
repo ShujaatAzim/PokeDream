@@ -70,14 +70,14 @@ _OaksLabOak1YourPokemonCanFightText::
 	text "OAK: If a wild"
 	line "#MON appears,"
 	cont "your #MON can"
-	cont "fight against it!"
+	cont "battle it!"
 	done
 
 _OaksLabOak1RaiseYourYoungPokemonText::
 	text "OAK: <PLAYER>,"
 	line "raise your young"
 	cont "#MON by making"
-	cont "it fight!"
+	cont "it battle!"
 	done
 
 _OaksLabOak1DeliverParcelText::
@@ -272,7 +272,7 @@ _OaksLabRivalAmIGreatOrWhatText::
 _OaksLabRivalSmellYouLaterText::
 	text "<RIVAL>: Okay!"
 	line "I'll make my"
-	cont "#MON fight to"
+	cont "#MON battle to"
 	cont "toughen it up!"
 
 	para "<PLAYER>! Gramps!"

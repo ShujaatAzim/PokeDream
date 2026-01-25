@@ -21,7 +21,7 @@ _ViridianGymGiovanniPreBattleText::
 _ViridianGymGiovanniReceivedEarthBadgeText::
 	text "Ha!"
 	line "That was a truly"
-	cont "intense fight!"
+	cont "intense battle!"
 	cont "You have won!"
 	cont "As proof, here is"
 	cont "the EARTHBADGE!@"

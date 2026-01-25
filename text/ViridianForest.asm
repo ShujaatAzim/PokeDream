@@ -3,7 +3,7 @@ _ViridianForestYoungster1Text::
 	line "some friends!"
 
 	para "They're out for"
-	line "#MON fights!"
+	line "#MON battles!"
 	done
 
 _ViridianForestYoungster2BattleText::

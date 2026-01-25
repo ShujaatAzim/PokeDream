@@ -153,7 +153,7 @@ _ViridianCityTrainerTips1Text::
 
 	para "The more you have,"
 	line "the easier it is"
-	cont "to fight!"
+	cont "to battle!"
 	done
 
 _ViridianCityTrainerTips2Text::
