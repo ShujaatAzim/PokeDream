@@ -35,6 +35,7 @@ DEF SHOW EQU $15
 	const HS_SAFFRON_CITY_E                ; 17
 	const HS_SAFFRON_CITY_F                ; 18
 	const HS_ROUTE_1_ITEM_1								 ; (new)
+	const HS_ROUTE_1_CAVE_ITEM_1					 ; (new)
 	const HS_ROUTE_2_ITEM_1                ; 19 X
 	const HS_ROUTE_2_ITEM_2                ; 1A X
 	const HS_ROUTE_4_ITEM                  ; 1B X
@@ -110,6 +111,8 @@ DEF SHOW EQU $15
 	const HS_BILL_POKEMON                  ; 61
 	const HS_BILL_1                        ; 62
 	const HS_BILL_2                        ; 63
+	const HS_VIRIDIAN_FOREST_JESSIE
+	const HS_VIRIDIAN_FOREST_JAMES
 	const HS_VIRIDIAN_FOREST_ITEM_1        ; 64 X
 	const HS_VIRIDIAN_FOREST_ITEM_2        ; 65 X
 	const HS_VIRIDIAN_FOREST_ITEM_3        ; 66 X
@@ -238,5 +241,4 @@ DEF SHOW EQU $15
 	const HS_SEAFOAM_ISLANDS_B4F_BOULDER_1 ; E1
 	const HS_SEAFOAM_ISLANDS_B4F_BOULDER_2 ; E2
 	const HS_ARTICUNO                      ; E3 X
-	const HS_ROUTE_1_CAVE_ITEM_1
 DEF NUM_HS_OBJECTS EQU const_value

@@ -71,6 +71,36 @@ _ViridianForestYoungster5Text::
 	line "extras!"
 	done
 
+_ViridianForestTeamRocketBattleText::
+	text "JESSIE: Prepare"
+	line "for trouble!"
+
+	para "JAMES: Make it"
+	line "double!"
+	done
+
+_ViridianForestTeamRocketEndBattleText::
+	text "This"
+	line "brat is good!"
+	prompt
+
+_ViridianForestTeamRocketAfterBattleText::
+	text "We'll remember"
+	line "this, kid!"
+	done
+
+_ViridianForestJamesText::
+	text "You're just a"
+	line "kid... scram!"
+	done
+
+_ViridianForestTeamRocketLeaveText::
+	text "We're blasting"
+	line "off again!"
+	done
+
+; Signs
+
 _ViridianForestTrainerTips1Text::
 	text "TRAINER TIPS"
 

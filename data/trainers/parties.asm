@@ -12,7 +12,7 @@ TrainerDataPointers:
 	dw BikerData
 	dw BurglarData
 	dw EngineerData
-	dw UnusedJugglerData
+	dw TeamRocketData
 	dw FisherData
 	dw SwimmerData
 	dw CueBallData
@@ -316,8 +316,9 @@ EngineerData:
 	db 21, MAGNEMITE, 0
 	db 18, MAGNEMITE, MAGNEMITE, MAGNETON, 0
 
-UnusedJugglerData:
-; none
+TeamRocketData:
+; Viridian Forest
+	db 6, EKANS, KOFFING, MEOWTH, 0
 
 FisherData:
 ; SS Anne 2F Rooms

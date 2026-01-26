@@ -65,7 +65,6 @@ TypeEffects:
 	db GRASS,        POISON,       NOT_VERY_EFFECTIVE
 	db GRASS,        FLYING,       NOT_VERY_EFFECTIVE
 	db GRASS,        STEEL,        NOT_VERY_EFFECTIVE
-
 	db GRASS,        DRAGON,       NOT_VERY_EFFECTIVE
 
 	; ------------------------
@@ -79,6 +78,7 @@ TypeEffects:
 	db ICE,          ICE,          NOT_VERY_EFFECTIVE
 	db ICE,          WATER,        NOT_VERY_EFFECTIVE
 	db ICE,          STEEL,        NOT_VERY_EFFECTIVE
+	db ICE,					 FIRE,				 NOT_VERY_EFFECTIVE
 
 	; ------------------------
 	; FIGHTING
@@ -156,6 +156,7 @@ TypeEffects:
 	db BUG,          FIRE,         NOT_VERY_EFFECTIVE
 	db BUG,          FIGHTING,     NOT_VERY_EFFECTIVE
 	db BUG,          FLYING,       NOT_VERY_EFFECTIVE
+	db BUG,					 POISON,			 NOT_VERY_EFFECTIVE
 	db BUG,          GHOST,        NOT_VERY_EFFECTIVE
 	db BUG,          STEEL,        NOT_VERY_EFFECTIVE
 	db BUG,          FAIRY,        NOT_VERY_EFFECTIVE

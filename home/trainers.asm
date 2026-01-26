@@ -407,15 +407,34 @@ PlayTrainerMusic::
 	ld a, [wGymLeaderNo]
 	and a
 	ret nz
+
 	xor a
 	ld [wAudioFadeOutControl], a
 	ld a, SFX_STOP_ALL_MUSIC
 	call PlaySound
+
 	ld a, BANK(Music_MeetEvilTrainer)
 	ld [wAudioROMBank], a
 	ld [wAudioSavedROMBank], a
+
 	ld a, [wEngagedTrainerClass]
 	ld b, a
+
+	ld hl, TeamRocketTrainerList
+.teamRocketListLoop
+	ld a, [hli]
+	cp $ff
+	jr z, .checkEvilTrainerList
+	cp b
+	jr nz, .teamRocketListLoop
+
+	ld a, BANK(Music_MeetTeamRocket)
+	ld [wAudioROMBank], a
+	ld [wAudioSavedROMBank], a
+	ld a, MUSIC_MEET_TEAMROCKET
+	jr .PlaySound
+
+.checkEvilTrainerList
 	ld hl, EvilTrainerList
 .evilTrainerListLoop
 	ld a, [hli]
@@ -425,6 +444,7 @@ PlayTrainerMusic::
 	jr nz, .evilTrainerListLoop
 	ld a, MUSIC_MEET_EVIL_TRAINER
 	jr .PlaySound
+
 .noEvilTrainer
 	ld hl, FemaleTrainerList
 .femaleTrainerListLoop
@@ -435,6 +455,7 @@ PlayTrainerMusic::
 	jr nz, .femaleTrainerListLoop
 	ld a, MUSIC_MEET_FEMALE_TRAINER
 	jr .PlaySound
+
 .maleTrainer
 	ld a, MUSIC_MEET_MALE_TRAINER
 .PlaySound
