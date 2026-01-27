@@ -56,12 +56,12 @@ _Route3CooltrainerF1EndBattleText::
 _Route3CooltrainerF1AfterBattleText::
 	text "Quit staring if"
 	line "you don't want to"
-	cont "fight!"
+	cont "battle!"
 	done
 
 _Route3Youngster3BattleText::
 	text "Are you a trainer?"
-	line "Let's fight!"
+	line "Let's battle!"
 	done
 
 _Route3Youngster3EndBattleText::
@@ -88,7 +88,7 @@ _Route3CooltrainerF2EndBattleText::
 	prompt
 
 _Route3CooltrainerF2AfterBattleText::
-	text "Avoid fights by"
+	text "Avoid battles by"
 	line "not letting"
 	cont "people see you!"
 	done
@@ -110,7 +110,7 @@ _Route3Youngster4AfterBattleText::
 	done
 
 _Route3Youngster5BattleText::
-	text "You can fight my"
+	text "You can battle my"
 	line "new #MON!"
 	done
 

@@ -48,7 +48,7 @@ _RockTunnel1FHiker3AfterBattleText::
 	done
 
 _RockTunnel1FSuperNerdBattleText::
-	text "#MON fight!"
+	text "#MON battle!"
 	line "Ready, go!"
 	done
 

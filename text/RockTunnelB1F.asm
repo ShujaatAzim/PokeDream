@@ -83,7 +83,7 @@ _RockTunnelB1FHiker2AfterBattleText::
 _RockTunnelB1FCooltrainerF2BattleText::
 	text "I don't often"
 	line "come here, but I"
-	cont "will fight you."
+	cont "will battle you."
 	done
 
 _RockTunnelB1FCooltrainerF2EndBattleText::

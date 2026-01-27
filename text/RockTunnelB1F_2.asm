@@ -16,5 +16,5 @@ _RockTunnelB1FSuperNerd3EndBattleText::
 
 _RockTunnelB1FSuperNerd3AfterBattleText::
 	text "I'm an artist,"
-	line "not a fighter."
+	line "not a battler."
 	done

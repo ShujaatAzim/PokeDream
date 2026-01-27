@@ -102,7 +102,7 @@ _CeruleanCityRocketIllReturnTheTMText::
 _CeruleanCityCooltrainerMText::
 	text "You're a trainer"
 	line "too? Collecting,"
-	cont "fighting, it's a"
+	cont "battling, it's a"
 	cont "tough life."
 	done
 
