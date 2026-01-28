@@ -1,6 +1,6 @@
 _Route17Biker1BattleText::
 	text "There's no money"
-	line "in fighting kids!"
+	line "in battling kids!"
 	done
 
 _Route17Biker1EndBattleText::

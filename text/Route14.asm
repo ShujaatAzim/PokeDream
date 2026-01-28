@@ -151,7 +151,7 @@ _Route14Biker3AfterBattleText::
 	done
 
 _Route14Biker4BattleText::
-	text "#MON fight?"
+	text "#MON battle?"
 	line "Cool! Rumble!"
 	done
 
