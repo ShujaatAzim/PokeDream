@@ -10,7 +10,7 @@ _SaffronGymSabrinaText::
 	line "to bend spoons"
 	cont "with my mind."
 
-	para "I dislike fight-"
+	para "I dislike battl-"
 	line "ing, but if you"
 	cont "wish, I will show"
 	cont "you my powers!"
@@ -178,7 +178,7 @@ _SaffronGymYoungster2AfterBattleText::
 _SaffronGymChanneler3BattleText::
 	text "You and I, our"
 	line "#MON shall"
-	cont "fight!"
+	cont "battle!"
 	done
 
 _SaffronGymChanneler3EndBattleText::

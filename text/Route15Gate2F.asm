@@ -3,7 +3,7 @@ _Route15Gate2FOaksAideExpAllText::
 	line "EXP points to all"
 	cont "the #MON with"
 	cont "you, even if they"
-	cont "don't fight."
+	cont "don't battle."
 
 	para "It does, however,"
 	line "reduce the amount"

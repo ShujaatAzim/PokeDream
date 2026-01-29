@@ -15,11 +15,11 @@ _AgathaBeforeBattleText::
 	line "to fiddle with"
 	cont "his #DEX! He's"
 	cont "wrong! #MON"
-	cont "are for fighting!"
+	cont "are for battling!"
 
 	para "<PLAYER>! I'll show"
 	line "you how a real"
-	cont "trainer fights!"
+	cont "trainer battles!"
 	done
 
 _AgathaEndBattleText::
