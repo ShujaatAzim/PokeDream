@@ -251,10 +251,9 @@ MapHSPointers:
 	dw NoHS
 	dw NoHS
 	dw NoHS
-	dw NoHS ; Pallet Town Small House 1
 	dw NoHS ; Oak's Research Ranch
 	dw NoHS ; Pallet Ranch Gate
-	dw NoHS ; Pallet Town Small House 2
+	dw NoHS ; Pallet Town Houses
 	dw NoHS ; Pallet Mart
 	dw Route1CaveHS ; Route 1 Cave
 	assert_table_length NUM_MAPS

@@ -249,10 +249,9 @@ MapHeaderPointers::
 	dw LoreleisRoom_h
 	dw BrunosRoom_h
 	dw AgathasRoom_h
-	dw PalletTownHouse1_h
 	dw OaksResearchRanch_h
 	dw PalletRanchGate_h
-	dw PalletTownSchoolHouse_h
+	dw PalletTownHouses_h
 	dw PalletMart_h
 	dw Route1Cave_h
 	assert_table_length NUM_MAPS

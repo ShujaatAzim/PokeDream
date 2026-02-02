@@ -4,8 +4,8 @@ PalletRanchGate_Object:
 	def_warp_events
 	warp_event  4,  7, OAKS_RESEARCH_RANCH, 1
 	warp_event  5,  7, OAKS_RESEARCH_RANCH, 1
-	warp_event  4,  0, PALLET_TOWN, 5
-	warp_event  5,  0, PALLET_TOWN, 6
+	warp_event  4,  0, PALLET_TOWN, 6
+	warp_event  5,  0, PALLET_TOWN, 7
 
 	def_bg_events
 
