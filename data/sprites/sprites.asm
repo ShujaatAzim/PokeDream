@@ -70,6 +70,7 @@ SpriteSheetPointerTable:
 	overworld_sprite JessieSprite, 12						; SPRITE_JESSIE
 	overworld_sprite JamesSprite, 12						; SPRITE_JAMES
 	overworld_sprite RocketGirlSprite, 12				; SPRITE_ROCKET_GIRL
+	overworld_sprite PikachuSprite, 12					; SPRITE_PIKACHU
 	; still sprites
 	overworld_sprite PokeBallSprite, 4          ; SPRITE_POKE_BALL
 	overworld_sprite FossilSprite, 4            ; SPRITE_FOSSIL
