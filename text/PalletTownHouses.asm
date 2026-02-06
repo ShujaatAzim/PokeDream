@@ -1,16 +1,15 @@
-; Pallet Small House 1
+; Pallet Town Houses
 _PalletTownOldManText::
-	text "I remember the"
-	line "day I left Pallet"
-	para "to become a great"
-	line "#MON trainer."
+	text "Ah, I remember"
+	line "the day I left"
+	cont "home to become a"
+	cont "#MON trainer."
 
-	para "It was one of the"
-	line "best days of my"
-  cont "life!"
+	para "It was the best"
+	line "day of my life!"
 
-	para "I hope it is for"
-	line "you too!"
+	para "I hope you reme-"
+	line "member it too!"
 	done
 
 _PalletTownOldWomanText::
@@ -20,9 +19,11 @@ _PalletTownOldWomanText::
   cont "days."
 
   para "Don't let him keep"
-  line "you! You have a"
-  para "long, great adven-"
-  line "ture ahead of you!"
+  line "you!"
+
+  para "You have a long,"
+  line "great adventure"
+  cont "ahead of you!"
   done
 
 _PalletTownPikachuText::
