@@ -67,18 +67,17 @@ PalletTownOakWalksToPlayerScript:
 	ldh [hSpriteFacingDirection], a
 	call SetSpriteFacingDirectionAndDelay
 	call Delay3
-	ld a, 3
-	ld [wYCoord], a
-	ld a, 1
-	ldh [hNPCPlayerRelativePosPerspective], a
-	ld a, 1
-	swap a
-	ldh [hNPCSpriteOffset], a
-	predef CalcPositionOfPlayerRelativeToNPC
-	ld hl, hNPCPlayerYDistance
-	dec [hl]
-	predef FindPathToPlayer ; load Oak's movement into wNPCMovementDirections2
-	ld de, wNPCMovementDirections2
+
+	; new script to make Oak walk from off screen
+	ld a, [wXCoord]
+	cp 14
+	jr z, .playerAt14
+	ld de, OakWalkToPlayer15
+	jr .moveOak
+.playerAt14
+	ld de, OakWalkToPlayer14
+
+.moveOak
 	ld a, PALLETTOWN_OAK
 	ldh [hSpriteIndex], a
 	call MoveSprite
@@ -89,6 +88,21 @@ PalletTownOakWalksToPlayerScript:
 	ld a, SCRIPT_PALLETTOWN_OAK_NOT_SAFE_COME_WITH_ME
 	ld [wPalletTownCurScript], a
 	ret
+
+OakWalkToPlayer14:
+	db NPC_MOVEMENT_UP
+	db NPC_MOVEMENT_UP
+	db NPC_MOVEMENT_UP
+	db NPC_MOVEMENT_UP
+	db -1
+
+OakWalkToPlayer15:
+	db NPC_MOVEMENT_UP
+	db NPC_MOVEMENT_UP
+	db NPC_MOVEMENT_UP
+	db NPC_MOVEMENT_RIGHT
+	db NPC_MOVEMENT_UP
+	db -1
 
 PalletTownOakNotSafeComeWithMeScript:
 	ld a, [wStatusFlags5]
