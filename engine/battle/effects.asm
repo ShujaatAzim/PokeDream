@@ -558,9 +558,21 @@ StatModifierDownEffect:
 	ld a, [de]
 	cp ATTACK_DOWN_SIDE_EFFECT
 	jr c, .nonSideEffect
+
+	; TODO: Add per-move secondary effect chances, 
+	; instead of these specific ones and generic 33% chances
+	cp ACCURACY_DOWN_SIDE_EFFECT_ALWAYS
+	jr z, .alwaysLower
+
 	call BattleRandom
 	cp 33 percent + 1 ; chance for side effects
 	jp nc, CantLowerAnymore
+
+	.alwaysLower
+	ld a, [de]
+	sub ATTACK_DOWN_SIDE_EFFECT
+	jr .decrementStatMod
+
 	ld a, [de]
 	sub ATTACK_DOWN_SIDE_EFFECT ; map each stat to 0-4
 	jr .decrementStatMod
