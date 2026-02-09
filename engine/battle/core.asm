@@ -3969,7 +3969,10 @@ CheckForDisobedience:
 	ld a, $1
 	and a
 	ret
-; compare the mon's original trainer ID with the player's ID to see if it was traded
+; compare the mon's original trainer ID with the player's ID to see if it was traded.
+; However, this is now changed so that it always falls through to .monIsTraded.
+; This way, all pokemon that are overleveled, even owned ones, can disobey.
+; I am leaving the check in place anyway, just in case it's used elsewhere.
 .checkIfMonIsTraded
 	ld hl, wPartyMon1OTID
 	ld bc, wPartyMon2 - wPartyMon1
@@ -3981,24 +3984,35 @@ CheckForDisobedience:
 	inc hl
 	ld a, [wPlayerID + 1]
 	cp [hl]
-	jp z, .canUseMove
-; it was traded
+	jp z, .monIsTraded ;used to be .canUseMove but now they can always be disobedient 
 .monIsTraded
 ; what level might disobey?
 	ld hl, wObtainedBadges
 	bit BIT_EARTHBADGE, [hl]
 	ld a, 101
 	jr nz, .next
+	bit BIT_VOLCANOBADGE, [hl]
+	ld a, 55
+	jr nz, .next
 	bit BIT_MARSHBADGE, [hl]
-	ld a, 70
+	ld a, 50
+	jr nz, .next
+	bit BIT_SOULBADGE, [hl]
+	ld a, 45
 	jr nz, .next
 	bit BIT_RAINBOWBADGE, [hl]
-	ld a, 50
+	ld a, 40
+	jr nz, .next
+	bit BIT_THUNDERBADGE, [hl]
+	ld a, 35
 	jr nz, .next
 	bit BIT_CASCADEBADGE, [hl]
 	ld a, 30
 	jr nz, .next
-	ld a, 10
+	bit BIT_BOULDERBADGE, [hl]
+	ld a, 25
+	jr nz, .next
+	ld a, 20
 .next
 	ld b, a
 	ld c, a
@@ -4012,18 +4026,19 @@ CheckForDisobedience:
 	ld a, c
 	cp d
 	jp nc, .canUseMove
-.loop1
+.loop1 ; this loop is for checking if a pokemon listens even if disobedient
 	call BattleRandom
 	swap a
 	cp b
 	jr nc, .loop1
-	cp c
+	cp 5 ; further restrict chances of obeying
 	jp c, .canUseMove
-.loop2
+
+.loop2 ; this loop is for choosing what the pokemon does if it doesn't listen (loop1 fail)
 	call BattleRandom
 	cp b
 	jr nc, .loop2
-	cp c
+	cp 5 ; further restrict chances of using a random move
 	jr c, .useRandomMove
 	ld a, d
 	sub c
