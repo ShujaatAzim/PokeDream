@@ -51,13 +51,16 @@ IF DEF(_DEBUG)
 	jp nz, DisplayTitleScreen
 
 	ld a, [wCurrentMenuItem]
-	and a ; FIGHT?
-	jp z, TestBattle
+	and a ; DEBUG?
+	jr nz, .battle
 
 	; DEBUG
 	ld hl, wStatusFlags6
 	set BIT_DEBUG_MODE, [hl]
 	jp StartNewGameDebug
+
+.battle
+	jp TestBattle
 
 DebugBattlePlayerName:
 	db "Tom@"
@@ -66,8 +69,8 @@ DebugBattleRivalName:
 	db "Juerry@"
 
 DebugMenuOptions:
-	db   "FIGHT"
-	next "DEBUG@"
+	db   "DEBUG"
+	next "BATTLE@"
 ELSE
 	ret
 ENDC
