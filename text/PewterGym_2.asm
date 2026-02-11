@@ -74,9 +74,15 @@ _PewterGymBrockBoulderBadgeInfoText::
 	line "#MON become"
 	cont "more powerful!"
 
-	para "The technique"
+	para "Also, the move"
 	line "FLASH can now be"
 	cont "used any time!"
+
+	para "Finally, all your"
+	line "#MON up to"
+	cont "L25 will respect"
+	cont "you and obey"
+	cont "orders!"
 	prompt
 
 _PewterGymCooltrainerMBattleText::
