@@ -19,6 +19,11 @@ _VermilionGymLTSurgeThunderBadgeInfoText::
 	line "#MON FLY any"
 	cont "time, kid!"
 
+	para "Finally, it also"
+	line "makes all your"
+	cont "#MON up to"
+	cont "level 35 obey!"
+
 	para "You're special,"
 	line "kid! Take this!"
 	done
