@@ -20,6 +20,11 @@ _FuchsiaGymKogaSoulBadgeInfoText::
 	line "SURF outside of"
 	cont "battle!"
 
+	para "Finally, all your"
+	line "#MON up to"
+	cont "L45 will obey"
+	cont "your commands!"
+
 	para "Ah! Take this"
 	line "too!"
 	done
