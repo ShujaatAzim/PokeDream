@@ -40,7 +40,7 @@ _SaffronGymSabrinaPostBattleAdviceText::
 _SaffronGymSabrinaMarshBadgeInfoText::
 	text "The MARSHBADGE"
 	line "makes #MON up"
-	cont "to L70 obey you!"
+	cont "to L50 obey you!"
 
 	para "Stronger #MON"
 	line "will become wild,"
