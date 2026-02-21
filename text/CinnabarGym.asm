@@ -38,6 +38,10 @@ _CinnabarGymBlaineVolcanoBadgeInfoText::
 	cont "SPCL.ATK ability"
 	cont "of your #MON!"
 
+	para "Also, all your"
+	line "#MON up to"
+	cont "L55 will obey!"
+
 	para "Here, you can"
 	line "have this too!"
 	done
