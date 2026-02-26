@@ -3,7 +3,7 @@
 	db  60,  45,  50,  70,  90,  80
 	;   hp  atk  def  spd  sat  sdf
 
-	db BUG, FLYING ; type
+	db BUG, FAIRY ; type
 	db 45 ; catch rate
 	db 160 ; base exp
 
