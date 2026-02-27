@@ -3,7 +3,7 @@
 	db 250,   5,   5,  50,  35, 105
 	;   hp  atk  def  spd  sat  sdf
 
-	db NORMAL, NORMAL ; type
+	db FAIRY, NORMAL ; type
 	db 30 ; catch rate
 	db 255 ; base exp
 
