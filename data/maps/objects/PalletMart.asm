@@ -1,3 +1,6 @@
+object_const_def
+const_export PALLETMART_CLERK
+
 PalletMart_Object:
 	db $0 ; border block
 
@@ -8,5 +11,6 @@ PalletMart_Object:
 	def_bg_events
 
 	def_object_events
+	object_event  0,  5, SPRITE_CLERK, STAY, RIGHT, TEXT_PALLETMART_CLERK
 
 	def_warps_to PALLET_MART
