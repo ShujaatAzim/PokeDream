@@ -18,6 +18,32 @@ PokéDream is the Pokémon game I dreamed of after my very first playthrough. It
 
 ---
 
+## Documentation
+
+### Pokémon
+  - 🧬 [Typing Changes](docs/pokemon/typing_changes.md)
+  - 📚 [Learnset Changes](docs/pokemon/learnsets.md)
+  - 📊 [Base Stat Changes](docs/pokemon/base_stats.md)
+
+### Battle
+  - ⚙️ [Mechanics](docs/battle/mechanics.md)
+  - ⚔️ [Move Updates](docs/battle/moves.md)
+
+### World
+  - 🗺️ [Route Changes](docs/world/routes.md)
+  - 🏙️ [City Changes](docs/world/cities.md)
+  - 👥 [Trainer Changes](docs/world/trainers.md)
+  - 📜 [Quests](docs/world/quests.md)
+
+### Enhancements
+  - 🎮 [Quality of Life](docs/enhancements/quality_of_life.md)
+  - 🎨 [Graphics](docs/enhancements/graphics.md)
+
+### Changelog
+  - 📝 [Changelog](docs/changelog.md)
+
+---
+
 ## Major Features
 
 ### Pokémon
@@ -91,31 +117,6 @@ I focused on Blue version since this is the version I originally played. However
 
 This will generate a pokeblue.gbc or pokered.gbc file that can be played in any GameBoy emulator.
 
----
-
-## Documentation
-
-### Pokémon
-  - 🧬 [Typing Changes](docs/pokemon/typing_changes.md)
-  - 📚 [Learnset Changes](docs/pokemon/learnsets.md)
-  - 📊 [Base Stat Changes](docs/pokemon/base_stats.md)
-
-### Battle
-  - ⚙️ [Mechanics](docs/battle/mechanics.md)
-  - ⚔️ [Move Updates](docs/battle/moves.md)
-
-### World
-  - 🗺️ [Route Changes](docs/world/routes.md)
-  - 🏙️ [City Changes](docs/world/cities.md)
-  - 👥 [Trainer Changes](docs/world/trainers.md)
-  - 📜 [Quests](docs/world/quests.md)
-
-### Enhancements
-  - 🎮 [Quality of Life](docs/enhancements/quality_of_life.md)
-  - 🎨 [Graphics](docs/enhancements/graphics.md)
-
-### Changelog
-  - 📝 [Changelog](docs/changelog.md)
   
 ---
 
