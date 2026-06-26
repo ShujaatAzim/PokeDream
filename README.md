@@ -21,7 +21,7 @@ PokéDream is the Pokémon game I dreamed of after my very first playthrough. It
 ## Documentation
 
 ### Pokémon
-  - 🧬 [Typing Changes](docs/pokemon/typing_changes.md)
+  - 🧬 [Typing Changes](docs/pokemon/types.md)
   - 📚 [Learnset Changes](docs/pokemon/learnsets.md)
   - 📊 [Base Stat Changes](docs/pokemon/base_stats.md)
 
