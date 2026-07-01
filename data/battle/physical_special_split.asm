@@ -32,6 +32,7 @@ SpecialToPhysicalMoves:
 ; Dark
         db BITE
         db PAY_DAY
+        db CRUNCH
 ; Fairy
         db DOUBLESLAP
         db POUND
