@@ -164,6 +164,7 @@ AttackAnimationPointers:
 	dw SuperFangAnim
 	dw SlashAnim
 	dw SubstituteAnim
+	dw CrunchAnim
 	dw StruggleAnim
 	assert_table_length NUM_ATTACKS
 	dw ShowPicAnim
@@ -1278,3 +1279,9 @@ ThrowRockAnim:
 ThrowBaitAnim:
 	battle_anim BARRAGE, SUBANIM_0_SAFARI_BAIT, 0, 3
 	db -1 ; end
+
+CrunchAnim:
+    battle_anim NO_MOVE, SE_DARK_SCREEN_PALETTE
+    battle_anim BITE, SUBANIM_0_STAR_THRICE, 0, 8
+    battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
+    db -1 ; end
