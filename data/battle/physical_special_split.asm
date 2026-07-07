@@ -9,6 +9,9 @@ PhysicalToSpecialMoves:
         db HYPER_BEAM
         db TRI_ATTACK
 
+; Dragon
+        db DRAGON_RAGE
+
 ; Steel
         db SONICBOOM
         db SWIFT
