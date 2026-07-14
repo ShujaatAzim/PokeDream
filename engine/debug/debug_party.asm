@@ -19,15 +19,15 @@ DebugNewGameParty: ; unreferenced except in _DEBUG
 	; From https://web.archive.org/web/20000607152840/http://pocket.ign.com/news/14973.html
 	db EXEGGUTOR, 90
 IF DEF(_DEBUG)
-	db MEW, 5
-ELSE
 	db MEW, 20
+ELSE
+	db MEW, 5
 ENDC
-	db JOLTEON, 56
-	db DUGTRIO, 56
+	db JOLTEON, 49
+	db DUGTRIO, 49
 	db ARTICUNO, 57
 IF DEF(_DEBUG)
-	db PIKACHU, 5
+	db PIKACHU, 25
 ENDC
 	db -1 ; end
 
@@ -69,6 +69,25 @@ IF DEF(_DEBUG)
 	ld a, 15
 	ld [hli], a
 	ld [hl], a
+
+	; Mew moves, can use for testing New/Changed moves:
+	
+	; First take Mew's moveset and where in the movelist we want to start
+	ld hl, wPartyMon2Moves + 1  ; + 1 means the second moveslot, 0-based indexing
+	ld a, SONICBOOM 					  ; loads the intended move
+	ld [hli], a 								;	stores the move in that slot, and increments the target slot for the next one
+	ld a, DRAGON_RAGE 					; loads the next move
+	ld [hli], a
+	ld a, CRUNCH
+	ld [hl], a 								  ; store the move in the slot, no increment, i, since it's the last
+
+	ld hl, wPartyMon2PP + 1			; now load the target slot's PP
+	ld a, 20										; loads the PP into the variable
+	ld [hli], a									; sets the PP to the variable and increments for next slot
+	ld a, 10										; next move PP in variable
+	ld [hli], a
+	ld a, 15
+	ld [hl], a									; set move's pp, no increment since last move slot
 
 	; Jolteon gets Thunderbolt.
 	ld hl, wPartyMon3Moves + 3

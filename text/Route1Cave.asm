@@ -28,8 +28,8 @@ _Route1CaveHikerAfterBattleText::
   text "ONIX are very"
   line "strong, but rare."
 
-  para "I have won if I"
-  line "had caught one!"
+  para "I would have won"
+  line "if I had one!"
   done
 
 _Route1CaveLassBattleText::
