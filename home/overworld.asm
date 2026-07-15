@@ -1906,6 +1906,8 @@ CollisionCheckOnWater::
 	jr z, .checkIfVermilionDockTileset
 	cp $48 ; tile on right on coast lines in Safari Zone
 	jr z, .noCollision ; keep surfing
+	cp $31 ; this is the "dam" or "canal gate" tile, specifically.
+	jr z, .collision
 ; check if the [land] tile in front of the player is passable
 .checkIfNextTileIsPassable
 	ld hl, wTilesetCollisionPtr ; pointer to list of passable tiles
